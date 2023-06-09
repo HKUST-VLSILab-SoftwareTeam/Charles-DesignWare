@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module tb_fifo();
+module tc_sanity_fifo();
     localparam WIDTH = 8;
     localparam DEPTH = 16;
 
@@ -38,7 +38,7 @@ module tb_fifo();
     // VCD generation
     initial begin
         $dumpfile("fifo_waveform.vcd");
-        $dumpvars(0, tb_fifo);
+        $dumpvars(0, tc_sanity_fifo);
     end
 
     // Test stimulus
