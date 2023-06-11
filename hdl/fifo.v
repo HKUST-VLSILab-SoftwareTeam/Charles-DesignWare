@@ -1,4 +1,22 @@
 `timescale 1ns / 1ps
+/*
+This module has the following interface:
+- clk:          Clock input
+- rst:          Asynchronous reset input (active high)
+- wr_en:        Write enable input
+- rd_en:        Read enable input
+- wr_data:      Write data input
+- rd_data:      Read data output
+- empty:        Empty flag output (high when the FIFO is empty)
+- full:         Full flag output (high when the FIFO is full)
+- almost_full:  Indicates when the FIFO is one write away from being full.
+- almost_empty: Indicates when the FIFO is one read away from being empty.
+
+Explanation of the module:
+The module uses two pointers (wr_ptr and rd_ptr) to track the write and read positions in the memory array mem. 
+The empty and full flags are derived from the pointer positions, 
+and the module updates the pointers and memory contents based on the control inputs wr_en and rd_en.
+*/
 
 module fifo #(
     parameter WIDTH = 8,
