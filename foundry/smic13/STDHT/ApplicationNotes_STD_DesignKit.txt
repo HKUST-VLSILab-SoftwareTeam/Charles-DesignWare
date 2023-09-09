@@ -1,0 +1,69 @@
+         VeriSilicon SMIC 0.13um High-Density Standared Cell Library Application Notes
+
+1.Recommend Operating Conditions
+                                      typ     max      min
+  core DC supply voltage(volt)        1.2v    1.32v    1.08v
+  IO   DC supply voltage(volt)        2.5v    2.75v    2.25v
+  Junction temperature(centigrade)    25      125      0
+
+2.Derating Factors
+  The derating factors of VeriSilicon SMIC 0.13um High-Density Standared Cell Library given 
+  in document SMIC13HT-SC.pdf are for pre-layout estimation only.
+  
+3.Synopsys Model
+
+  a.The wire load models given in our synopsys library are for your REFERENCE ONLY. So please
+    create a customized wire load model appropriate for your design.
+
+  b.Please consider for which cell, if any, should be added dont_use and dont_touch during 
+    synthesis and ignore our settings.
+
+  c.Since our synthesis tools' version may be different from yours, it is recommended that you
+    create the db file using your own library compiler tools.
+
+  d.When reading in the model, synopsys tools will give some warning which should be ignored. The following is the warning list to be ignored:
+
+Warning: Line xxx, The 'values' attribute has a '-x.xxxxxx' value,
+        which is less than '0.000000' the minimum recommended value of this attribute. (LBDB-272)
+
+Warning: Line xxx, The 'SN' pin of the 'XXXX' design is not a clock pin
+and should not be used in the 'related_pin' of 'setup' timing arc. (LIBG-104)
+
+Warning: Line xx, The 'Z' Pin/bus on the 'HOLDHD' cell has no 'function' a
+ttribute.
+        The cell becomes a black box. (LIBG-16)
+
+Information: Line 197792, No internal_power information for the 'TIEHHDHT' cell. (LBDB-301)
+
+Information: Line 197792, No internal_power information for the 'TIELHDHT' cell. (LBDB-301)
+
+
+4.Ambit Sdf Writing
+  When using Ambit to write 2.1 version sdf, please use this option 
+  "-edges edged". The following is the eample:
+
+  ac_shell> write_sdf -version 2.1 -interconn all -edges edged -splitsethold design.sdf
+
+5.SDF file 
+  If you generate version 2.1 sdf file using synopsys design compiler(Version 2002.08 or 
+  later) or Ambit, please use the script Modify_SDF_2_1.pl to modify
+  the sdf file before doing back-annotation using Verilog-XL.
+
+  file : Synopsys/Modify_SDF_2_1.pl 
+
+  cmd line : Modify_SDF_2_1.pl sdf_file
+
+  result : sdf_file - can be used for back-annotation
+           sdf_file.bak - back-up file 
+
+6.Formality comment
+  If your design can not pass Synopsys Formality tool, commenting the cell HOLDHDHT from your design   may help you.
+
+7. Cell list comment
+  There are 581 basic cells in the library and add 9 FILLERC*HD cells in floorplan view.
+
+8. SDF back-annotation simulation
+  When doing sdf back-annotation in VCS(V6.2 and above), the option "+overlap" is necessary and the following 
+warning may appears.
+  Warning : The sum of a negative timing check limits should be greater than or equal to 0. Setting negative
+limits to 0. ("<verilog_model_filename>", xxxx).

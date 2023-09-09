@@ -1,0 +1,17 @@
+(gcf
+   (header
+      (version "1.3")
+      (TIME_SCALE 1.0E-9)
+      (CAP_SCALE 1.0E-12)
+   )
+   (globals
+      (globals_subset environment
+         (operating_conditions "BEST" 1.0 1.32 0)
+         (extension "CTLF_FILES"
+            (
+               ./smic13IO_01_stagger_ff/timing-BEST.ctlf
+            )
+         )
+      )
+   )
+)
