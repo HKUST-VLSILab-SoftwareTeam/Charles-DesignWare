@@ -2,18 +2,19 @@
 `include "uvm_macros.svh"
 import uvm_pkg::*;
 
-`include "common_dat_stream_int.sv"
-`include "common_dat_transaction.sv"
-`include "common_dat_stream_drv.sv"
-`include "common_dat_stream_mon.sv"
-`include "my_sequencer.sv"
-`include "common_dat_stream_agent.sv"
-`include "round_model.sv"
-`include "common_dat_stream_scoreboard.sv"
-`include "common_dat_stream_env.sv"
-`include "base_test.sv"
-`include "round_case0.sv"
-`include "round_case1.sv"
+`include "../env/common_dat_stream_int.sv"
+`include "../env/common_dat_transaction.sv"
+`include "../env/common_dat_stream_drv.sv"
+`include "../env/common_dat_stream_mon.sv"
+`include "../env/my_sequencer.sv"
+`include "../env/common_dat_stream_agent.sv"
+`include "../env/round_model.sv"
+`include "../env/common_dat_stream_scoreboard.sv"
+`include "../env/common_dat_stream_env.sv"
+`include "../env/base_test.sv"
+
+`include "../tc/round_case0.sv"
+`include "../tc/round_case1.sv"
 
 module top_tb();
 

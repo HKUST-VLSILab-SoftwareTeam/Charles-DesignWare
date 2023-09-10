@@ -3,7 +3,7 @@ cov_en     ?=y
 #cov tool can be verdi or dve or web
 cov_tool   ?=verdi
 arch_sel   ?=
-incdir     ?=../tb
+incdir     ?=../th
 #testbench name
 tb_name    ?=top_tb
 #testcase name
@@ -28,6 +28,7 @@ else
   TIME_CMD=-timescale
 endif
 
+#COV_TOOL condition
 ifeq ($(cov_tool),web)
   cov_cmd=urg -dir $(tc_name).vdb -report $(tc_name) -full64 
 endif
@@ -121,13 +122,13 @@ endif
 #compile files
 vcs:
 	$(UVM_COMPILE)
-	$(VCS) -F ./filelist.f -v $(SIM_FILE) work.$(tb_name)
+	$(VCS) -F ../cfg/filelist.f -v $(SIM_FILE) work.$(tb_name)
 
 sim:
 	$(SIM) +UVM_TESTNAME=$(tc_name) +WAVE_PATH=$(wave_path) +WAVE_TYPE=$(wave_type)
 
 wave:
-	verdi -sv -F ./filelist.f -ssf $(wave_path)/$(tc_name).fsdb &
+	verdi -sv -F ../cfg/filelist.f -ssf $(wave_path)/$(tc_name).fsdb &
 
 debug:
 	dve -vpd $(tc_name).vpd
