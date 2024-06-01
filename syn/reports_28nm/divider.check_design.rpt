@@ -1,0 +1,81 @@
+ 
+****************************************
+check_design summary:
+Version:     R-2020.09-SP4
+Date:        Sun Mar 24 23:29:17 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     66
+    Unconnected ports (LINT-28)                                    65
+    Constant outputs (LINT-52)                                      1
+--------------------------------------------------------------------------------
+
+Warning: In design 'divider', port 'start' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[30]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[29]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[28]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[27]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[26]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[25]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'dividend[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[30]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[29]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[28]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[27]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[26]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[25]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', port 'divisor[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'divider', output port 'done' is connected directly to 'logic 0'. (LINT-52)
+1

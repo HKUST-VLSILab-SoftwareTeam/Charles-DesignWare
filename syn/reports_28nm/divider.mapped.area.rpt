@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : divider
+Version: R-2020.09-SP4
+Date   : Sun Mar 24 23:30:24 2024
+****************************************
+
+Library(s) Used:
+
+    tcbn28hpcplusbwp7t35p140tt0p9v85c_ccs (File: /home/ic/TechLib/TSMCN28_SYN/CCS/tcbn28hpcplusbwp7t35p140tt0p9v85c_ccs.db)
+
+Number of ports:                          132
+Number of nets:                            66
+Number of cells:                           66
+Number of combinational cells:             66
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         65
+Number of references:                       2
+
+Combinational area:                 19.306000
+Buf/Inv area:                       19.110000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                    19.306000
+Total area:                 undefined
+1

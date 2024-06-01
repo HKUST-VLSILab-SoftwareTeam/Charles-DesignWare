@@ -1,0 +1,11 @@
+#!/bin/sh
+
+################################################################################
+# Specify the filepath of the verilog library file of standard cell
+################################################################################
+VERILOG_LIB=/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Verilog/NangateOpenCellLibrary.v
+
+SDF_LOCATION="../layout/results/divider.sdf"
+
+vcs -full64 ../layout/results/divider.routed.v ../tb/divider_tb.v +v2k -debug_all -top divider_tb \
+  -timescale=1ns/1ps +neg_tchk +warn=noTFIPC,noSDFCOM_UHICD -v $VERILOG_LIB +define+SDF_FILE=\"$SDF_LOCATION\"

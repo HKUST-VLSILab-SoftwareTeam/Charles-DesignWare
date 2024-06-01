@@ -1,0 +1,55 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : divider
+Version: R-2020.09-SP4
+Date   : Sun Mar 24 23:30:24 2024
+****************************************
+
+
+Library(s) Used:
+
+    tcbn28hpcplusbwp7t35p140tt0p9v85c_ccs (File: /home/ic/TechLib/TSMCN28_SYN/CCS/tcbn28hpcplusbwp7t35p140tt0p9v85c_ccs.db)
+
+
+Operating Conditions: tt0p9v85c   Library: tcbn28hpcplusbwp7t35p140tt0p9v85c_ccs
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+divider                ZeroWireload      tcbn28hpcplusbwp7t35p140tt0p9v85c_ccs
+
+
+Global Operating Voltage = 0.9  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =   0.0000 mW        
+  Net Switching Power  =   0.0000 mW        
+                         ---------
+Total Dynamic Power    =   0.0000 mW        
+
+Cell Leakage Power     = 321.7291 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.0000            0.0000          321.7253        3.2173e-04  ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total              0.0000 mW         0.0000 mW       321.7253 nW     3.2173e-04 mW
+1

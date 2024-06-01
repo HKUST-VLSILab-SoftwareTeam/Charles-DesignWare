@@ -1,0 +1,70 @@
+ 
+****************************************
+Report : qor
+Design : divider
+Version: R-2020.09-SP4
+Date   : Sun Mar 24 23:33:42 2024
+****************************************
+
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          0
+  Hierarchical Port Count:          0
+  Leaf Cell Count:                 66
+  Buf/Inv Cell Count:              65
+  Buf Cell Count:                   0
+  Inv Cell Count:                  65
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:        66
+  Sequential Cell Count:            0
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:       46.393202
+  Noncombinational Area:     0.000000
+  Buf/Inv Area:             45.864002
+  Total Buffer Area:             0.00
+  Total Inverter Area:          45.86
+  Macro/Black Box Area:      0.000000
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:                46.393202
+  Design Area:              46.393202
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:            66
+  Nets With Violations:            65
+  Max Trans Violations:             0
+  Max Cap Violations:              65
+  -----------------------------------
+
+
+  Hostname: qingteng
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.00
+  Logic Optimization:                  0.00
+  Mapping Optimization:                0.00
+  -----------------------------------------
+  Overall Compile Time:                8.18
+  Overall Compile Wall Clock Time:     9.43
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

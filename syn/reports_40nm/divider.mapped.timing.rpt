@@ -1,0 +1,18 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 1
+        -transition_time
+Design : divider
+Version: R-2020.09-SP4
+Date   : Sun Mar 24 23:33:42 2024
+****************************************
+
+Operating Conditions: NC0D9COM   Library: tcbn40lpbwptc0d9_ccs
+Wire Load Model Mode: segmented
+No paths.
+
+1
