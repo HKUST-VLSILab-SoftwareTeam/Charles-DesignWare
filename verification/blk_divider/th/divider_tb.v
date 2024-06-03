@@ -29,17 +29,19 @@ wire [31:0] quotient, remainder;
 // ----------------------------------
 // Instantiate the divider
 // ----------------------------------
-divider uut (
+divider # (
+  .XLEN       (32)
+) dut (
   .clk        (clk),          // system clock
-  .rst        (rst),          // system reset (active high)
+  .rst_n      (rst_n),        // system reset (active high)
 
-  .start      (start),        // flag for starting division
-  .dividend   (dividend),     // operand 1: dividend
-  .divisor    (divisor),      // operand 2: divisor
+  .vld        (start),        // flag for starting division
+  .a          (dividend),     // operand 1: dividend
+  .b          (divisor),      // operand 2: divisor
 
-  .done       (done),         // flag for finishing division
-  .quotient   (quotient),     // result 1: quotient
-  .remainder  (remainder)     // result 2: remainder
+  .ack        (done),         // flag for finishing division
+  .quo        (quotient),     // result 1: quotient
+  .rem        (remainder)     // result 2: remainder
 );
 
 // ----------------------------------

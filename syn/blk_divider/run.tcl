@@ -7,7 +7,9 @@
 # This is the template Design Compiler script for ELEC5160/EESM5020.
 ################################################################################
 
-set DESIGN_PATH ../rtl
+set DESIGN_ROOT /home/ic/github/Charles-DesignWare
+set HDL_PATH ${HDL_PATH}/hdl/blk_divider
+set TOP_MODULE_NAME divider
 
 # TSMC 28nm library
 # set DB_PATH /home/ic/TechLib/TSMCN28_SYN/CCS
@@ -31,8 +33,8 @@ file mkdir results; # store design
 # - target_library
 # - link_library
 ################################################################################
-# set_app_var search_path ".  ../rtl $search_path"
-set_app_var search_path ". ${DB_PATH} ${DESIGN_PATH} $search_path"
+set_app_var search_path ". $DESIGN_ROOT/common $search_path"
+set_app_var search_path ". ${DB_PATH} ${HDL_PATH} $search_path"
 set_app_var target_library "${DB_NAME}"
 set_app_var link_library "* $target_library"
 
@@ -43,11 +45,11 @@ set_app_var link_library "* $target_library"
 # Please do NOT import testbench or behavior memory model here.
 ################################################################################
 define_design_lib WORK -path ./WORK
-analyze -format verilog {divider.v}
-elaborate divider; # top module name
+analyze -f $HDL_PATH/sanity.f -format verilog
+elaborate ${TOP_MODULE_NAME}; # top module name
 
 # store the unmapped results
-write -hierarchy -format ddc -output results/divider.unmapped.ddc
+write -hierarchy -format ddc -output results/${TOP_MODULE_NAME}.unmapped.ddc
 
 ################################################################################
 # Step 3: constrain your design
@@ -82,14 +84,14 @@ set_fix_multiple_port_nets -all -buffer_constants
 # the synthesis.
 ################################################################################
 check_design -summary
-check_design > reports/divider.check_design.rpt; # dump to the file
+check_design > reports/${TOP_MODULE_NAME}.check_design.rpt; # dump to the file
 
 ################################################################################
 # Step 4: compile the design
 # There exits lots of option for compile command. Please check the manual of
 # compile for further info.
 ################################################################################
-compile
+compile_ultra
 
 ################################################################################
 # Note: compile_ultra does not work for some open source libraries, i.e. Nangate
@@ -115,17 +117,17 @@ optimize_netlist -area
 change_names -rules verilog -hierarchy
 
 # Write out design
-write -format verilog -hierarchy -output results/divider.mapped.v
-write -format ddc -hierarchy -output results/divider.mapped.ddc
-write_sdf results/divider.mapped.sdf
-write_sdc -nosplit results/divider.mapped.sdc
+write -format verilog -hierarchy -output results/${TOP_MODULE_NAME}.mapped.v
+write -format ddc -hierarchy -output results/${TOP_MODULE_NAME}.mapped.ddc
+write_sdf results/${TOP_MODULE_NAME}.mapped.sdf
+write_sdc -nosplit results/${TOP_MODULE_NAME}.mapped.sdc
 
 # Generate reports
-report_qor > reports/divider.mapped.qor.rpt
+report_qor > reports/${TOP_MODULE_NAME}.mapped.qor.rpt
 report_timing -transition_time -nets -attribute -nosplit \
-  > reports/divider.mapped.timing.rpt
-report_area -nosplit > reports/divider.mapped.area.rpt
-report_power -nosplit > reports/divider.mapped.power.rpt
+  > reports/${TOP_MODULE_NAME}.mapped.timing.rpt
+report_area -nosplit > reports/${TOP_MODULE_NAME}.mapped.area.rpt
+report_power -nosplit > reports/${TOP_MODULE_NAME}.mapped.power.rpt
 
 ################################################################################
 # Exit Design Compiler

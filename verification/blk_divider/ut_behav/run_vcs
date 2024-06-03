@@ -5,9 +5,10 @@
 # notice: please ma vcs and ma verdi in your terminal before running this script.
 
 # set environment for including the common Libraries
-set WORK_ROOT = "/home/ic/github/vlsi_project/divider"
-set TB_NAME = "$WORK_ROOT/tb/divider_tb.v"
-set RTL_FLIST = "$WORK_ROOT/rtl/sanity.f"
+set WORK_ROOT   = "/home/ic/github/Charles-DesignWare"
+set TB          = "$WORK_ROOT/verification/blk_divider/th/divider_tb.v"
+set RTL_FLIST   = "$WORK_ROOT/hdl/blk_divider/sanity.f"
+set COMMON      = "/common"
 
 if ($* == "vcs") then
     # This command runs the simulation and output the simv file for debugging or dumping the wave
@@ -16,7 +17,7 @@ if ($* == "vcs") then
     # -f: Specify the filelist containing your design files
     vcs -full64 \
     -f $RTL_FLIST \
-    -y $WORK_ROOT/dff \
+    -y $COMMON \
     +libext+.v \
     +libext+.vh \
     +v2k \
@@ -25,7 +26,7 @@ if ($* == "vcs") then
     -debug_access+all \
     -fsdb \
     -timescale=1ns/1ps \
-    tb_single_aic_cube_mnk_decode_l300.v
+    $TB
 else if ($* == "simv") then
     # This command runs the simulation until the $finish is reached and dump the wave into the .fsdb file.
     ./simv \
@@ -37,14 +38,14 @@ else if ($* == "verdi") then
     # The parameters are the same as vcs command
     verdi -sv \
     -f $RTL_FLIST \
-    -y $WORK_ROOT/dff \
+    -y $WORK_ROOT \
     +libext+.v \
     +libext+.vh \
     +v2k \
     -vcs+lic+wait \
     -ssf dut.fsdb \
     -nologo \
-    tb_single_aic_cube_mnk_decode_l300.v
+    $TB
 else
     echo "error: please specify either 'vcs', 'simv' or 'verdi' as the input"
 endif
