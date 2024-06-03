@@ -4,48 +4,58 @@
 # create: Oct/15/2021 j84200486
 # notice: please ma vcs and ma verdi in your terminal before running this script.
 
-# set environment for including the common Libraries
-set WORK_ROOT   = "/home/ic/github/Charles-DesignWare"
-set TB          = "$WORK_ROOT/verification/blk_divider/th/divider_tb.v"
-set RTL_FLIST   = "$WORK_ROOT/hdl/blk_divider/sanity.f"
-set COMMON      = "/common"
+# sourceme: set global env parameters
+source ../../../script/sourceme.sh
 
-if ($* == "vcs") then
-    # This command runs the simulation and output the simv file for debugging or dumping the wave
-    # -y: Specify the library.
-    # +libext: Used together with -y to specify the file extension that will be regarded as library files.
-    # -f: Specify the filelist containing your design files
+# set environment for including the common Libraries
+set SIM_FLIST   = "../th/sim.f"
+
+# VCS command explanations: 
+# -full64:              compile in 64-bit mode
+# -sverilog:            support compiling system verilog
+# +vcs+fsdbon:          dump a dump.fsdb file after type run in simv env
+# +vcs+dumpvars:        dump the variables into the fsdb file
+# -F:                   Specify the filelist containing your design files, -F support relative path, -f only supports abs path
+# -j28:                 use 28 cores for compilation (can be changed)
+# -kdb:                 enable generating verdi KDB database, it's used to trace signals inside verdi
+# -debug_access+all:    enable all the debug features
+# -R:                   runs the simv executable immediately after VCS simulation
+# -ucli:                enable debug in the ucli (unified command line interface) mode
+# -cm:                  enable line, condition, fsm, toggle, branch and assertation coverage analysis
+# -lint=all:            print full lint problems
+# +vcs+initreg+random:  x-prop (initialize register to be x). It will init both reg and mem
+# +vcs+initmem+random:  memory init with random value, will not init reg
+# timescale:            simulation timescale representation
+# -l:                   log's name  
+if ($* == "sim") then
+    # This command runs the simulation and output the simv file in normal mode
     vcs -full64 \
-    -f $RTL_FLIST \
-    -y $COMMON \
-    +libext+.v \
-    +libext+.vh \
-    +v2k \
-    -vcs+lic+wait \
-    -l vcs.log \
+    -sverilog \
+    +vcs+fsdbon \
+    +vcs+dumpvars \
+    -F $SIM_FLIST \
+    -j28 \
+    -kdb \
     -debug_access+all \
-    -fsdb \
+    -R \
+    +lint=all \
+    +vcs+initreg+random \
     -timescale=1ns/1ps \
-    $TB
-else if ($* == "simv") then
-    # This command runs the simulation until the $finish is reached and dump the wave into the .fsdb file.
-    ./simv \
-    +vcs+lic+wait \
-    -l simv.log \
-    +fsdb+autoflush
+    -l vcs_sim.log \
+    -o simv
+else if ($* == "cov") then
+    # This command runs the coverage analysis of your code
+    vcs -full64 \
+    -sverilog \
+    -F $SIM_FLIST \
+    -j28 \
+    -kdb \
+    -cm line+cond+fsm+tgl+branch+assert \
+    -timescale=1ns/1ps \
+    -l vcs_cov.log
 else if ($* == "verdi") then
-    # This command loads the design (.v, for viewing the circuit block) and the waveform (.fsdb) into the Verdi.
-    # The parameters are the same as vcs command
-    verdi -sv \
-    -f $RTL_FLIST \
-    -y $WORK_ROOT \
-    +libext+.v \
-    +libext+.vh \
-    +v2k \
-    -vcs+lic+wait \
-    -ssf dut.fsdb \
-    -nologo \
-    $TB
+    # open the fsdb file
+    verdi -ssf novas.fsdb
 else
-    echo "error: please specify either 'vcs', 'simv' or 'verdi' as the input"
+    echo "error: please specify either 'sim', 'cov' or 'verdi' as the input"
 endif

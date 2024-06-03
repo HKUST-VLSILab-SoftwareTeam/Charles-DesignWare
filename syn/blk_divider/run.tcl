@@ -7,7 +7,6 @@
 # This is the template Design Compiler script for ELEC5160/EESM5020.
 ################################################################################
 
-set DESIGN_ROOT /home/ic/github/Charles-DesignWare
 set HDL_PATH ${HDL_PATH}/hdl/blk_divider
 set TOP_MODULE_NAME divider
 
@@ -33,7 +32,7 @@ file mkdir results; # store design
 # - target_library
 # - link_library
 ################################################################################
-set_app_var search_path ". $DESIGN_ROOT/common $search_path"
+set_app_var search_path ". $WORK_ROOT/common $search_path"
 set_app_var search_path ". ${DB_PATH} ${HDL_PATH} $search_path"
 set_app_var target_library "${DB_NAME}"
 set_app_var link_library "* $target_library"

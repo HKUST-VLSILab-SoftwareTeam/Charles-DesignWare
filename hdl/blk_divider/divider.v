@@ -19,12 +19,10 @@
 `define N(n)                       [(n)-1:0]
 `define FFx(signal,bits)           always @ ( posedge clk or negedge  rst_n ) if (   rst_n   )  signal <= bits;  else
 
-module divfunc
-#(
+module divider #(
     parameter                      XLEN          = 32,
     parameter `N(XLEN)             STAGE_LIST    = 0
-)
-(
+)(
 
     input              clk,
     input              rst_n,

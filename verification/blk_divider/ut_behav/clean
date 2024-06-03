@@ -1,5 +1,10 @@
-#!/bin/sh
+#!/bin/tcsh
 
-rm -fr csrc DVEfiles simv.daidir
-rm -f *.vpd *.key
-rm -f simv
+# Loop through all files in the current directory
+foreach file (*)
+    # Check if the file is not 'clean' or 'run_vcs'
+    if ("$file" != "clean" && "$file" != "run_vcs") then
+        # Remove the file
+        rm -rf "$file"
+    endif
+end

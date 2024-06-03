@@ -1,5 +1,5 @@
 // =============================================================================
-// Filename: divider_tb.v
+// Filename: harness.v
 // Author: ZHU, Jingyang
 // Email: jzhuak@connect.ust.hk
 // Affiliation: Hong Kong University of Science and Technology
@@ -8,10 +8,7 @@
 // This file exports the testbench for divider module.
 // It generates the adhoc input stimulus for the divider.
 // =============================================================================
-
-`timescale 1 ns / 1 ps
-
-module divider_tb;
+module harness;
 
 // ----------------------------------
 // Local parameter declaration
@@ -21,7 +18,7 @@ localparam CLK_PERIOD = 5.0;  // clock period: 5ns
 // ----------------------------------
 // Interface of the divider module
 // ----------------------------------
-reg clk, rst, start;
+reg clk, rst_n, start;
 reg [31:0] dividend, divisor;
 wire done;
 wire [31:0] quotient, remainder;
@@ -29,7 +26,7 @@ wire [31:0] quotient, remainder;
 // ----------------------------------
 // Instantiate the divider
 // ----------------------------------
-divider # (
+divider #(
   .XLEN       (32)
 ) dut (
   .clk        (clk),          // system clock
@@ -71,11 +68,11 @@ end
 // ----------------------------------
 initial begin
   // Reset
-  rst         = 1'b1;
+  rst_n       = 1'b0;
   start       = 1'b0;
   dividend    = 32'd0;
   divisor     = 32'd0;
-  #(2*CLK_PERIOD) rst = 1'b0;
+  #(2*CLK_PERIOD) rst_n = 1'b1;
 
   // Input stimulus 1: 10/7
   @(negedge clk);
@@ -121,7 +118,7 @@ initial begin
   wait(done == 1'b1); #(CLK_PERIOD*2);
   $finish;
 end
-  
+
 // ----------------------------------
 // Time Limit
 // ----------------------------------
@@ -130,7 +127,7 @@ initial begin
   $display("Reach time limit, force stop.");
   $finish;
 end
-  
+
 // ----------------------------------
 // Output monitor
 // ----------------------------------
