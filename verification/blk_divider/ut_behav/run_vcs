@@ -38,6 +38,8 @@ if ($* == "sim") then
     -kdb \
     -debug_access+all \
     -R \
+	+vc \
+	+v2k \
     +lint=all \
     +vcs+initreg+random \
     -timescale=1ns/1ps \

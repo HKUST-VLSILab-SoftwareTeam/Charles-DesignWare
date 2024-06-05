@@ -1,3 +1,4 @@
 #!/bin/tcsh -f
 
-setenv WORK_ROOT  "/home/ic/github/Charles-DesignWare"
+setenv WORK_ROOT  "/home/jjt/Charles-DesignWare"
+
