@@ -1,0 +1,21 @@
+rc file Version 1.0
+
+[Design]
+COMPILE_PATH=/home/ic/github/Charles-DesignWare/verification/blk_prince/ut_behav
+VERDI_HOME=/opt/synopsys/verdi/R-2020.12-SP1
+SystemC=FALSE
+UUM=FALSE
+KDB=TRUE
+USE_NOVAS_HOME=FALSE
+COSIM=FALSE
+TOP=tb_prince 
+OPTION=-ssv -ssy 
+ELAB_OPTION=-ssv -ssy 
+ELAB=TRUE
+SIMV_WRAPPER=FALSE
+[vcs]
+RUN_ELABCOM=unset TURBO_LOG_DIR ;\rm -rf /home/ic/github/Charles-DesignWare/verification/blk_prince/ut_behav/simv.daidir/elabcomLog ;/opt/synopsys/vcs/Q-2020.03-SP2-7/linux64/bin/elabcom -logdir /home/ic/github/Charles-DesignWare/verification/blk_prince/ut_behav/simv.daidir/elabcomLog  -simvdaidir /home/ic/github/Charles-DesignWare/verification/blk_prince/ut_behav/simv.daidir  -lib /home/ic/github/Charles-DesignWare/verification/blk_prince/ut_behav/simv.daidir/work  -saveLevel  -elab /home/ic/github/Charles-DesignWare/verification/blk_prince/ut_behav/simv.daidir/kdb -simflow -simdir /home/ic/github/Charles-DesignWare/verification/blk_prince/ut_behav/simv.daidir/kdb_libs -topfile /home/ic/github/Charles-DesignWare/verification/blk_prince/ut_behav/simv.daidir/.elabcomTopFile -ssv -ssy  -Lf work +disable_message+C00380+C00381 +disable_message+C00388+C00389  >& /dev/null  && echo Success >& /home/ic/github/Charles-DesignWare/verification/blk_prince/ut_behav/simv.daidir/.elabcomReport || echo Fail >& /home/ic/github/Charles-DesignWare/verification/blk_prince/ut_behav/simv.daidir/.elabcomReport; \rm -rf /home/ic/github/Charles-DesignWare/verification/blk_prince/ut_behav/simv.daidir/work.lib++ /home/ic/github/Charles-DesignWare/verification/blk_prince/ut_behav/simv.daidir/kdb_libs/ 
+
+[Value]
+WREALX=ffff534e50535f58
+WREALZ=ffff534e50535f5a

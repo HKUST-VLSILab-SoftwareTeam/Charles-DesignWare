@@ -1,0 +1,48 @@
+version: (200506)
+
+available memory: 64M bytes
+used memory: 278528 bytes [need 272K bytes if disable swap]
+
+used block: 13 [memory(13) file(0)]
+                 [ 8K(10) 64K(3) { total 272K bytes } ]
+overhead: (9538) bytes for (13) blocks [Average: (733) bytes/block]
+
+write  => 0(times) 0K(bytes) [0K bytes to file]
+read   => 3(times) 98K(bytes) [17K bytes compressed data from file]
+access => 1108030(times) 8688M(bytes)
+          [hit ratio: 99.9997%]
+
+time: write(0) read(0)  unit: second
+
+swap file directory: (/home/ic/github/Charles-DesignWare/verification/blk_prince/ut_behav/verdiLog)
+used swap file number: (5)
+
+
+
+swap file manager:
+arrSize: (256)
+idxCnt: (6)
+closeHead: (1)
+closeTail: (5)
+openCnt: (4)
+fid(5): fd(1073741826) fileName(/home/ic/github/Charles-DesignWare/verification/blk_prince/ut_behav/simv.daidir/kdb.elab++/work.lib++/prince_core.v.tdc)
+	size(9761) lastModTime(1717693419) curModTime(1717693419)
+	mode(rb)	hot(0) cool(4) pos(0)
+fid(4): fd(1073741825) fileName(/home/ic/github/Charles-DesignWare/verification/blk_prince/ut_behav/simv.daidir/kdb.elab++/work.lib++/prince.v.tdc)
+	size(8415) lastModTime(1717693419) curModTime(1717693419)
+	mode(rb)	hot(5) cool(2) pos(0)
+fid(3): fd(0) fileName(/home/ic/github/Charles-DesignWare/verification/blk_prince/ut_behav/simv.daidir/kdb.elab++/work.lib++/prince_round_functions.v.tdc)
+	size(10713) lastModTime(1717693419) curModTime(1717693419)
+	mode(rb)	hot(0) cool(0) pos(0)
+fid(2): fd(24) fileName(/home/ic/github/Charles-DesignWare/verification/blk_prince/ut_behav/verdiLog/_swap_0001#8323328#32830)
+	size(0) lastModTime(0) curModTime(1717693446)
+	mode(w+b)	hot(4) cool(1) pos(0)
+fid(1): fd(1073741824) fileName(/home/ic/github/Charles-DesignWare/verification/blk_prince/ut_behav/simv.daidir/kdb.elab++/work.lib++/tb_prince.v.tdc)
+	size(13835) lastModTime(1717693419) curModTime(1717693419)
+	mode(rb)	hot(2) cool(0) pos(0)
+fid(0): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+==================================================
+mySelf(18b00040) pre(18af1960) next(0)
+version(200506)
+date(Jul  4 2021 20:40:57)

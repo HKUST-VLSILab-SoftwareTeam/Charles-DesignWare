@@ -1,0 +1,133 @@
+0 
+46
++itf+/opt/synopsys/vcs/Q-2020.03-SP2-7/linux64/lib/vcsdp_lite.tab
++lint=all
++v2k
++vc
++vcs+dumpvars
++vcs+fsdbon
++vcs+initreg+random
++vcsd1
++vpi
+-F ../th/sim.f
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/opt/synopsys/vcs/Q-2020.03-SP2-7/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /opt/synopsys/vcs/Q-2020.03-SP2-7/linux64/lib/libvirsim.so /opt/synopsys/vcs/Q-2020.03-SP2-7/linux64/lib/liberrorinf.so /opt/synopsys/vcs/Q-2020.03-SP2-7/linux64/lib/libsnpsmalloc.so /opt/synopsys/vcs/Q-2020.03-SP2-7/linux64/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/opt/synopsys/vcs/Q-2020.03-SP2-7/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=/opt/synopsys/verdi/R-2020.12-SP1/share/PLI/VCS/LINUX64/pli.a -ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/opt/synopsys/vcs/Q-2020.03-SP2-7/include
+-Mxllcflags=
+-P
+-Xufe=2steps
+-Xvcs_run_simv=1
+-debug_access
+-debug_access+all
+-fsdb
+-full64
+-gen_obj
+-kdb
+-l
+-o simv
+-picarchive
+-sverilog
+-timescale=1ns/1ps
+/opt/synopsys/vcs/Q-2020.03-SP2-7/linux64/bin/vcs1
+vcs_sim.log
+simv
+/opt/synopsys/verdi/R-2020.12-SP1/share/PLI/VCS/LINUX64/verdi.tab
+../th/sim.f
+67
+wv_HOME=/opt/synopsys/wv/S-2021.09
+syn_HOME=/opt/synopsys/syn/R-2020.09-SP4
+spyglass_HOME=/opt/synopsys/spyglass/P-2019.06-SP1-1
+prime_HOME=/opt/synopsys/prime/R-2020.09-SP4
+lc_HOME=/opt/synopsys/lc/R-2020.09-SP3
+icc2_HOME=/opt/synopsys/icc2/R-2020.09-SP1
+hspice_HOME=/opt/synopsys/hspice/S-2021.09
+fm_HOME=/opt/synopsys/fm/Q-2019.12-SP2
+ZSH=/home/ic/.oh-my-zsh
+XDG_SESSION_ID=4
+XDG_RUNTIME_DIR=/run/user/1001
+XDG_DATA_DIRS=/home/ic/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+WORK_ROOT=/home/ic/github/Charles-DesignWare
+Virtuoso_HOME=/opt/cadence/ic618
+VMR_MODE_FLAG=64
+VERDI_HOME=/opt/synopsys/verdi/R-2020.12-SP1
+VENDOR=unknown
+VCS_TARGET_ARCH=amd64
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_LOG_FILE=vcs_sim.log
+VCS_HOME=/opt/synopsys/vcs/Q-2020.03-SP2-7
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TOOL_HOME=/opt/synopsys/vcs/Q-2020.03-SP2-7/linux64
+Synopsys_Dir=/opt/synopsys
+SSH_TTY=/dev/pts/3
+SSH_CONNECTION=192.168.184.1 49356 192.168.184.130 22
+SSH_CLIENT=192.168.184.1 49356 22
+SNPS_VERDI_INTERNAL_LP_XML_NEW_FLOW=1
+SELINUX_USE_CURRENT_RANGE=
+SELINUX_ROLE_REQUESTED=
+SELINUX_LEVEL_REQUESTED=
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+SCL_HOME=/opt/synopsys/scl/2021.03
+REMOTEHOST=192.168.184.1
+QT_GRAPHICSSYSTEM_CHECKED=1
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+OVA_UUM=0
+OSTYPE=linux
+OA_PLUGIN_PATH=/opt/cadence/ic618/oa_v22.60.050/data/plugins
+OA_HOME=/opt/cadence/ic618/oa_v22.60.050
+NOVAS_HOME=/opt/synopsys/verdi/R-2020.12-SP1
+Mentor_Dir=/opt/mentor
+MMSIM_HOME=/opt/cadence/spectre21
+MGLS_LICENSE_FILE=/opt/mentor/license/license.dat
+MGC_LIB_PATH=/opt/mentor/calibre/aoi_cal_2021.2_28.15/lib
+MGC_HOME=/opt/mentor/calibre/aoi_cal_2021.2_28.15
+MGC_FDI_OA_VERSION=22.60
+LSCOLORS=Gxfxcxdxbxegedabagacad
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LESS=-R
+LC_ALL=C
+HOSTTYPE=x86_64-linux
+HISTCONTROL=ignoredups
+GROUP=ic
+Cadence_Dir=/opt/cadence
+CDS_Netlisting_Mode=Analog
+CDS_LOAD_ENV=CSF
+CDS_LIC_FILE=/opt/cadence/license/license.dat
+CDS_AUTO_64BIT=ALL
+CALIBRE_HOME=/opt/mentor/calibre/aoi_cal_2021.2_28.15
+0
+8
+1717693173 /home/ic/github/Charles-DesignWare/verification/blk_prince/th/tb_prince.v
+1717693360 /home/ic/github/Charles-DesignWare/hdl/blk_prince/./prince.v
+1717693410 /home/ic/github/Charles-DesignWare/hdl/blk_prince/./prince_core.v
+1717693112 /home/ic/github/Charles-DesignWare/hdl/blk_prince/./prince_round_functions.v
+1717693345 /home/ic/github/Charles-DesignWare/hdl/blk_prince/sanity.f
+1717693189 ../th/sim.f
+1614702492 /opt/synopsys/verdi/R-2020.12-SP1/share/PLI/VCS/LINUX64/verdi.tab
+1627355318 /opt/synopsys/vcs/Q-2020.03-SP2-7/linux64/lib/vcsdp_lite.tab
+4
+1627355985 /opt/synopsys/vcs/Q-2020.03-SP2-7/linux64/lib/libvirsim.so
+1627355695 /opt/synopsys/vcs/Q-2020.03-SP2-7/linux64/lib/liberrorinf.so
+1627355657 /opt/synopsys/vcs/Q-2020.03-SP2-7/linux64/lib/libsnpsmalloc.so
+1627355692 /opt/synopsys/vcs/Q-2020.03-SP2-7/linux64/lib/libvfs.so
+1717693419 simv.daidir
+-1 partitionlib
