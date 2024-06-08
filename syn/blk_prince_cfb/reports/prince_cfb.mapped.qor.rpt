@@ -1,0 +1,109 @@
+ 
+****************************************
+Report : qor
+Design : prince_cfb
+Version: R-2020.09-SP4
+Date   : Sat Jun  8 00:33:44 2024
+****************************************
+
+
+  Timing Path Group 'REGIN'
+  -----------------------------------
+  Levels of Logic:              32.00
+  Critical Path Length:          0.97
+  Critical Path Slack:           3.51
+  Critical Path Clk Period:      5.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'REGOUT'
+  -----------------------------------
+  Levels of Logic:               3.00
+  Critical Path Length:          0.33
+  Critical Path Slack:           4.17
+  Critical Path Clk Period:      5.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:              30.00
+  Critical Path Length:          1.01
+  Critical Path Slack:           3.98
+  Critical Path Clk Period:      5.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          0
+  Hierarchical Port Count:          0
+  Leaf Cell Count:                853
+  Buf/Inv Cell Count:             133
+  Buf Cell Count:                   0
+  Inv Cell Count:                 133
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:       795
+  Sequential Cell Count:           58
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:      590.015995
+  Noncombinational Area:   168.840000
+  Buf/Inv Area:             77.952000
+  Total Buffer Area:             0.00
+  Total Inverter Area:          77.95
+  Macro/Black Box Area:      0.000000
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:               758.855995
+  Design Area:             758.855995
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:           921
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: qingteng
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.00
+  Logic Optimization:                  0.00
+  Mapping Optimization:                0.00
+  -----------------------------------------
+  Overall Compile Time:                9.40
+  Overall Compile Wall Clock Time:    10.28
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

@@ -1,0 +1,13 @@
+#!/bin/tcsh -f
+
+# sourceme: set global env parameters
+source ../../script/sourceme.sh
+
+echo $WORK_ROOT
+
+# run dc shell
+if ($1 == "debug") then
+    
+else if ($1 == "syn") then
+    dc_shell -f run.tcl | tee -i run.log
+endif

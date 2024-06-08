@@ -36,7 +36,7 @@
 //
 //======================================================================
 
-  function [3 : 0] sb(input [3 : 0] x);
+  function automatic [3 : 0] sb(input [3 : 0] x);
     case(x)
       4'h0: sb = 4'hb;
       4'h1: sb = 4'hf;
@@ -57,7 +57,7 @@
     endcase // case (x)
   endfunction // sb
 
-  function [63 : 0] s(input [63 : 0] x);
+  function automatic [63 : 0] s(input [63 : 0] x);
     s = {sb(x[63 : 60]), sb(x[59 : 56]),
          sb(x[55 : 52]), sb(x[51 : 48]),
          sb(x[47 : 44]), sb(x[43 : 40]),
@@ -68,7 +68,7 @@
          sb(x[07 : 04]), sb(x[03 : 00])};
   endfunction // s
 
-  function [3 : 0] isb(input [3 : 0] x);
+  function automatic [3 : 0] isb(input [3 : 0] x);
     case(x)
       4'h0: isb = 4'hb;
       4'h1: isb = 4'h7;
@@ -89,7 +89,7 @@
     endcase // case (x)
   endfunction // isb
 
-  function [63 : 0] si(input [63 : 0] x);
+  function automatic [63 : 0] si(input [63 : 0] x);
     si = {isb(x[63 : 60]), isb(x[59 : 56]),
           isb(x[55 : 52]), isb(x[51 : 48]),
           isb(x[47 : 44]), isb(x[43 : 40]),
@@ -100,7 +100,7 @@
           isb(x[07 : 04]), isb(x[03 : 00])};
   endfunction // si
 
-  function [63 : 0] rc(input [3 : 0] round);
+  function automatic [63 : 0] rc(input [3 : 0] round);
     begin
       case(round)
         00: rc = 64'h0000000000000000;
@@ -121,7 +121,7 @@
     end
   endfunction // rc
 
-  function [63 : 0] mp(input [63 : 0] b);
+  function automatic [63 : 0] mp(input [63 : 0] b);
     begin
       mp[63] = b[59] ^ b[55] ^ b[51];
       mp[62] = b[62] ^ b[54] ^ b[50];
@@ -190,7 +190,7 @@
     end
   endfunction // mp
 
-  function [63 : 0] m(input [63 : 0] b);
+  function automatic [63 : 0] m(input [63 : 0] b);
     begin : m_func
       reg [63 : 0] t;
       t = mp(b);
@@ -202,7 +202,7 @@
     end
   endfunction // m
 
-  function [63 : 0] mi(input [63 : 0] b);
+  function automatic [63 : 0] mi(input [63 : 0] b);
     begin : mi_func
       reg [63 : 0] t;
 
@@ -215,31 +215,31 @@
     end
   endfunction // m
 
-  function [63 : 0] round0(input [63 : 0] b, input [63 : 0] k);
+  function automatic [63 : 0] round0(input [63 : 0] b, input [63 : 0] k);
     begin
       round0 = b ^ k ^ rc(0);
     end
   endfunction // round0
 
-  function [63 : 0] round11(input [63 : 0] b, input [63 : 0] k);
+  function automatic [63 : 0] round11(input [63 : 0] b, input [63 : 0] k);
     begin
       round11 =  b ^ k ^ rc(11);
     end
   endfunction // round11
 
-  function [63 : 0] round(input [63 : 0] b, input [63 : 0] k, input [3 : 0] n);
+  function automatic [63 : 0] round(input [63 : 0] b, input [63 : 0] k, input [3 : 0] n);
     begin
       round = m(s(b)) ^ rc(n) ^ k;
     end
   endfunction // round
 
-  function [63 : 0] middle_round(input [63 : 0] b);
+  function automatic [63 : 0] middle_round(input [63 : 0] b);
     begin
       middle_round = si(mp(s(b)));
     end
   endfunction // middle_round
 
-  function [63 : 0] iround(input [63 : 0] b, input [63 : 0] k, input [3 : 0] n);
+  function automatic [63 : 0] iround(input [63 : 0] b, input [63 : 0] k, input [3 : 0] n);
     begin
       iround = si(mi(rc(n) ^ k ^ b));
     end

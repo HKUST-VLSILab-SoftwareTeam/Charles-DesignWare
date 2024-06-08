@@ -6,8 +6,8 @@
 # -------------------------------------------------------------------------------
 # This is the template Design Compiler script for ELEC5160/EESM5020.
 ################################################################################
-
-set HDL_PATH ${HDL_PATH}/hdl/blk_divider
+set WORK_ROOT $env(WORK_ROOT)
+set HDL_PATH ${WORK_ROOT}/hdl/blk_divider
 set TOP_MODULE_NAME divider
 
 # TSMC 28nm library
@@ -44,7 +44,8 @@ set_app_var link_library "* $target_library"
 # Please do NOT import testbench or behavior memory model here.
 ################################################################################
 define_design_lib WORK -path ./WORK
-analyze -f $HDL_PATH/sanity.f -format verilog
+analyze -format verilog -vcs "-f $HDL_PATH/sanity.f +libext+.v"
+
 elaborate ${TOP_MODULE_NAME}; # top module name
 
 # store the unmapped results
@@ -57,7 +58,7 @@ write -hierarchy -format ddc -output results/${TOP_MODULE_NAME}.unmapped.ddc
 # synthesize your design with the required specfication.
 ################################################################################
 # All the constraints are written in the following tcl script
-source divider.constraints.tcl
+source dut.constraints.tcl
 
 ################################################################################
 # Create default path groups

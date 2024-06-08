@@ -1,0 +1,265 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 1
+        -transition_time
+Design : prince
+Version: R-2020.09-SP4
+Date   : Sat Jun  8 09:19:01 2024
+****************************************
+
+Operating Conditions: tt0p9v85c   Library: tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+Wire Load Model Mode: segmented
+
+  Startpoint: address[2] (input port clocked by clk)
+  Endpoint: read_data[26]
+            (output port clocked by clk)
+  Path Group: FEEDTHROUGH
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  prince             ZeroWireload          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout     Trans      Incr       Path      Attributes
+  ------------------------------------------------------------------------------------------
+  clock clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  input external delay                               0.50       0.50 f
+  address[2] (in)                          0.10      0.00       0.50 f
+  address[2] (net)               2                   0.00       0.50 f
+  U412/ZN (NR2D1BWP12T40P140)              0.03      0.02       0.52 r
+  n310 (net)                     1                   0.00       0.52 r
+  U417/ZN (CKND2D1BWP12T40P140)            0.02      0.01       0.53 f
+  n311 (net)                     1                   0.00       0.53 f
+  U418/ZN (NR4D0BWP12T40P140)              0.04      0.03       0.57 r
+  n369 (net)                     2                   0.00       0.57 r
+  U351/ZN (ND4D0BWP12T40P140)              0.07      0.05       0.61 f
+  n312 (net)                     2                   0.00       0.61 f
+  U379/ZN (NR2D1BWP12T40P140)              0.22      0.15       0.76 r
+  n353 (net)                    32                   0.00       0.76 r
+  U398/ZN (MAOI22D0BWP12T40P140)           0.14      0.11       0.87 f
+  n314 (net)                     1                   0.00       0.87 f
+  U375/ZN (CKND12BWP12T40P140)             0.30      0.21       1.08 r
+  read_data[26] (net)            1                   0.00       1.08 r
+  read_data[26] (out)                      0.30      0.00       1.08 r
+  data arrival time                                             1.08
+
+  clock clk (rise edge)                              5.00       5.00
+  clock network delay (ideal)                        0.00       5.00
+  output external delay                             -0.50       4.50
+  data required time                                            4.50
+  ------------------------------------------------------------------------------------------
+  data required time                                            4.50
+  data arrival time                                            -1.08
+  ------------------------------------------------------------------------------------------
+  slack (MET)                                                   3.42
+
+
+  Startpoint: address[7] (input port clocked by clk)
+  Endpoint: key_reg_reg_0__0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: REGIN
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  prince             ZeroWireload          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock clk (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  input external delay                                              0.50       0.50 f
+  address[7] (in)                                         0.10      0.00       0.50 f
+  address[7] (net)                              2                   0.00       0.50 f
+  U421/ZN (NR4D0BWP12T40P140)                             0.04      0.04       0.54 r
+  n358 (net)                                    2                   0.00       0.54 r
+  U442/ZN (INR4D0BWP12T40P140)                            0.05      0.05       0.59 r
+  n362 (net)                                    2                   0.00       0.59 r
+  U536/ZN (IND2D1BWP12T40P140)                            0.03      0.03       0.62 f
+  n364 (net)                                    2                   0.00       0.62 f
+  U348/ZN (NR2OPTPAD1BWP12T40P140)                        0.28      0.16       0.78 r
+  n365 (net)                                   64                   0.00       0.78 r
+  U569/ZN (MAOI22D1BWP12T40P140)                          0.04      0.05       0.83 r
+  n191 (net)                                    1                   0.00       0.83 r
+  key_reg_reg_0__0_/D (DFCNQD1BWP12T40P140)               0.04      0.00       0.83 r
+  data arrival time                                                            0.83
+
+  clock clk (rise edge)                                             5.00       5.00
+  clock network delay (ideal)                                       0.00       5.00
+  key_reg_reg_0__0_/CP (DFCNQD1BWP12T40P140)                        0.00       5.00 r
+  library setup time                                               -0.03       4.97
+  data required time                                                           4.97
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                           4.97
+  data arrival time                                                           -0.83
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                  4.15
+
+
+  Startpoint: core/ready_reg_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: read_data[0]
+            (output port clocked by clk)
+  Path Group: REGOUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  prince             ZeroWireload          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+  prince_core        ZeroWireload          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock clk (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  core/ready_reg_reg/CP (DFSNQD1BWP12T40P140)             0.00      0.00       0.00 r
+  core/ready_reg_reg/Q (DFSNQD1BWP12T40P140)              0.01      0.04       0.04 r
+  core/ready (net)                              4                   0.00       0.04 r
+  core/ready (prince_core)                                          0.00       0.04 r
+  core_ready (net)                                                  0.00       0.04 r
+  U432/Z (AN4D0BWP12T40P140)                              0.02      0.04       0.09 r
+  n323 (net)                                    1                   0.00       0.09 r
+  U405/ZN (AOI31D1BWP12T40P140)                           0.11      0.07       0.16 f
+  n435 (net)                                    1                   0.00       0.16 f
+  U668/ZN (CKND12BWP12T40P140)                            0.29      0.20       0.36 r
+  read_data[0] (net)                            1                   0.00       0.36 r
+  read_data[0] (out)                                      0.29      0.00       0.36 r
+  data arrival time                                                            0.36
+
+  clock clk (rise edge)                                             5.00       5.00
+  clock network delay (ideal)                                       0.00       5.00
+  output external delay                                            -0.50       4.50
+  data required time                                                           4.50
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                           4.50
+  data arrival time                                                           -0.36
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                  4.14
+
+
+  Startpoint: core/k1_reg_reg_45_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/r8_reg_reg_59_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  prince             ZeroWireload          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+  prince_core        ZeroWireload          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock clk (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  core/k1_reg_reg_45_/CP (DFCNQD1BWP12T40P140)            0.00      0.00       0.00 r
+  core/k1_reg_reg_45_/Q (DFCNQD1BWP12T40P140)             0.03      0.06       0.06 f
+  core/k1_reg[45] (net)                        11                   0.00       0.06 f
+  core/U456/ZN (INVD0BWP12T40P140)                        0.04      0.03       0.10 r
+  core/n5308 (net)                              9                   0.00       0.10 r
+  core/U727/ZN (OAI22D0BWP12T40P140)                      0.07      0.05       0.15 f
+  core/n2876 (net)                              4                   0.00       0.15 f
+  core/U728/ZN (MUX2ND0BWP12T40P140)                      0.05      0.05       0.19 f
+  core/n2748 (net)                              5                   0.00       0.19 f
+  core/U729/ZN (INVD0BWP12T40P140)                        0.03      0.03       0.22 r
+  core/n2747 (net)                              4                   0.00       0.22 r
+  core/U3021/ZN (MUX2ND0BWP12T40P140)                     0.03      0.02       0.24 f
+  core/n2249 (net)                              1                   0.00       0.24 f
+  core/U3022/ZN (MUX2ND0BWP12T40P140)                     0.06      0.05       0.29 f
+  core/n2292 (net)                              5                   0.00       0.29 f
+  core/U3057/ZN (INVD0BWP12T40P140)                       0.03      0.03       0.32 r
+  core/n2618 (net)                              3                   0.00       0.32 r
+  core/U3124/ZN (OAI21D0BWP12T40P140)                     0.03      0.02       0.35 f
+  core/n2289 (net)                              1                   0.00       0.35 f
+  core/U3125/Z (AO21D1BWP12T40P140)                       0.01      0.03       0.38 f
+  core/n2293 (net)                              1                   0.00       0.38 f
+  core/U139/ZN (AOI22D1BWP12T40P140)                      0.03      0.02       0.40 r
+  core/n3148 (net)                              3                   0.00       0.40 r
+  core/U3126/ZN (XNR2D1BWP12T40P140)                      0.01      0.04       0.43 f
+  core/n2612 (net)                              2                   0.00       0.43 f
+  core/U3127/ZN (INVD0BWP12T40P140)                       0.02      0.01       0.45 r
+  core/n2613 (net)                              2                   0.00       0.45 r
+  core/U3541/ZN (MUX2ND0BWP12T40P140)                     0.03      0.02       0.47 f
+  core/n2614 (net)                              1                   0.00       0.47 f
+  core/U3542/ZN (MUX2ND0BWP12T40P140)                     0.05      0.04       0.51 f
+  core/n2795 (net)                              4                   0.00       0.51 f
+  core/U3543/ZN (INVD0BWP12T40P140)                       0.03      0.03       0.54 r
+  core/n3425 (net)                              4                   0.00       0.54 r
+  core/U3555/ZN (ND3D0BWP12T40P140)                       0.05      0.03       0.58 f
+  core/n2638 (net)                              2                   0.00       0.58 f
+  core/U3557/ZN (AOI32D1BWP12T40P140)                     0.03      0.03       0.61 r
+  core/n3547 (net)                              3                   0.00       0.61 r
+  core/U4408/Z (XOR2D1BWP12T40P140)                       0.01      0.04       0.65 f
+  core/n3549 (net)                              1                   0.00       0.65 f
+  core/U4409/ZN (MUX2ND0BWP12T40P140)                     0.03      0.03       0.68 f
+  core/n3677 (net)                              2                   0.00       0.68 f
+  core/U4410/ZN (INVD0BWP12T40P140)                       0.02      0.02       0.70 r
+  core/n3678 (net)                              2                   0.00       0.70 r
+  core/U4499/ZN (MUX2ND0BWP12T40P140)                     0.03      0.02       0.72 f
+  core/n3679 (net)                              1                   0.00       0.72 f
+  core/U4500/ZN (MUX2ND0BWP12T40P140)                     0.03      0.03       0.75 f
+  core/n3680 (net)                              1                   0.00       0.75 f
+  core/U4501/ZN (MUX2ND0BWP12T40P140)                     0.05      0.05       0.80 f
+  core/n3781 (net)                              5                   0.00       0.80 f
+  core/U4502/ZN (INVD0BWP12T40P140)                       0.03      0.03       0.83 r
+  core/n5022 (net)                              4                   0.00       0.83 r
+  core/U5661/ZN (NR2D1BWP12T40P140)                       0.03      0.02       0.84 f
+  core/n5025 (net)                              2                   0.00       0.84 f
+  core/U5662/ZN (AOI22D1BWP12T40P140)                     0.03      0.02       0.86 r
+  core/n5027 (net)                              1                   0.00       0.86 r
+  core/U5663/Z (OA22D1BWP12T40P140)                       0.01      0.03       0.89 r
+  core/n5700 (net)                              1                   0.00       0.89 r
+  core/r8_reg_reg_59_/D (DFCNQD1BWP12T40P140)             0.01      0.00       0.89 r
+  data arrival time                                                            0.89
+
+  clock clk (rise edge)                                             5.00       5.00
+  clock network delay (ideal)                                       0.00       5.00
+  core/r8_reg_reg_59_/CP (DFCNQD1BWP12T40P140)                      0.00       5.00 r
+  library setup time                                               -0.02       4.98
+  data required time                                                           4.98
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                           4.98
+  data arrival time                                                           -0.89
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                  4.09
+
+
+1

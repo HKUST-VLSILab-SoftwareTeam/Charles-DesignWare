@@ -1,0 +1,565 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version R-2020.09-SP4 for linux64 - Mar 02, 2021 
+
+                    Copyright (c) 1988 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+################################################################################
+# Filename: dc.tcl
+# Author: ZHU Jingyang
+# Email: jzhuak@connect.ust.hk
+# Affiliation: Hong Kong University of Science and Technology
+# -------------------------------------------------------------------------------
+# This is the template Design Compiler script for ELEC5160/EESM5020.
+################################################################################
+set WORK_ROOT $env(WORK_ROOT)
+/home/ic/github/Charles-DesignWare
+set HDL_PATH ${WORK_ROOT}/hdl/blk_prince_cfb
+/home/ic/github/Charles-DesignWare/hdl/blk_prince_cfb
+set TOP_MODULE_NAME prince_cfb
+prince_cfb
+# TSMC 28nm library
+# set DB_PATH /home/ic/TechLib/TSMCN28_SYN/CCS
+# set DB_NAME tcbn28hpcplusbwp7t35p140tt0p9v85c_ccs.db
+# TSMC 40nm library
+set DB_PATH /home/ic/TechLib/t28_hpcp/logic/tcbn28hpcplusbwp12t40p140_180a/AN61001_20180514/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn28hpcplusbwp12t40p140_180a
+/home/ic/TechLib/t28_hpcp/logic/tcbn28hpcplusbwp12t40p140_180a/AN61001_20180514/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn28hpcplusbwp12t40p140_180a
+set DB_NAME tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs.db
+tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs.db
+# set DB_NAME tcbn28hpcplusbwp12t40p140tt1v0p9v85c_ccs.db
+################################################################################
+# Step 0: create directories for results and reports
+################################################################################
+file mkdir reports; # store area, timing, power reports
+file mkdir results; # store design
+################################################################################
+# Step 1: digital standard cell library set up
+# You should specify the following paths accordingly:
+# - search_path
+# - target_library
+# - link_library
+################################################################################
+set_app_var search_path ". $WORK_ROOT/common $search_path"
+. /home/ic/github/Charles-DesignWare/common . /opt/synopsys/syn/R-2020.09-SP4/libraries/syn /opt/synopsys/syn/R-2020.09-SP4/dw/syn_ver /opt/synopsys/syn/R-2020.09-SP4/dw/sim_ver
+set_app_var search_path ". ${DB_PATH} ${HDL_PATH} $search_path"
+. /home/ic/TechLib/t28_hpcp/logic/tcbn28hpcplusbwp12t40p140_180a/AN61001_20180514/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn28hpcplusbwp12t40p140_180a /home/ic/github/Charles-DesignWare/hdl/blk_prince_cfb . /home/ic/github/Charles-DesignWare/common . /opt/synopsys/syn/R-2020.09-SP4/libraries/syn /opt/synopsys/syn/R-2020.09-SP4/dw/syn_ver /opt/synopsys/syn/R-2020.09-SP4/dw/sim_ver
+set_app_var target_library "${DB_NAME}"
+tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs.db
+set_app_var link_library "* $target_library"
+* tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs.db
+################################################################################
+# Step 2: import design
+# You should specify the HDL files for your design accordingly.
+# Note: the HDL files should be located in the search_path you defined above.
+# Please do NOT import testbench or behavior memory model here.
+################################################################################
+define_design_lib WORK -path ./WORK
+1
+analyze -format verilog -vcs "-f $HDL_PATH/sanity.f +libext+.v"
+Running PRESTO HDLC
+Compiling source file /home/ic/github/Charles-DesignWare/hdl/blk_prince_cfb/prince_core.v
+Compiling source file /home/ic/github/Charles-DesignWare/hdl/blk_prince_cfb/prince_cfb.v
+Presto compilation completed successfully.
+Loading db file '/home/ic/TechLib/t28_hpcp/logic/tcbn28hpcplusbwp12t40p140_180a/AN61001_20180514/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn28hpcplusbwp12t40p140_180a/tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs.db'
+Information: Using CCS timing libraries. (TIM-024)
+1
+elaborate ${TOP_MODULE_NAME}; # top module name
+Loading db file '/opt/synopsys/syn/R-2020.09-SP4/libraries/syn/gtech.db'
+Loading db file '/opt/synopsys/syn/R-2020.09-SP4/libraries/syn/standard.sldb'
+  Loading link library 'tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Statistics for case statements in always block at line 77 in file
+	'/home/ic/github/Charles-DesignWare/hdl/blk_prince_cfb/prince_cfb.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            81            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 122 in file
+	'/home/ic/github/Charles-DesignWare/hdl/blk_prince_cfb/prince_cfb.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           123            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 155 in file
+	'/home/ic/github/Charles-DesignWare/hdl/blk_prince_cfb/prince_cfb.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           156            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine prince_cfb line 77 in file
+		'/home/ic/github/Charles-DesignWare/hdl/blk_prince_cfb/prince_cfb.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine prince_cfb line 149 in file
+		'/home/ic/github/Charles-DesignWare/hdl/blk_prince_cfb/prince_cfb.v'.
+==================================================================================
+|     Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+==================================================================================
+| inner_block_done_r_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+==================================================================================
+
+Inferred memory devices in process
+	in routine prince_cfb line 169 in file
+		'/home/ic/github/Charles-DesignWare/hdl/blk_prince_cfb/prince_cfb.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   block_done_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine prince_cfb line 178 in file
+		'/home/ic/github/Charles-DesignWare/hdl/blk_prince_cfb/prince_cfb.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   cipher_text_reg   | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (prince_cfb)
+Elaborated 1 design.
+Current design is now 'prince_cfb'.
+Information: Building the design 'prince_core'. (HDL-193)
+Warning:  /home/ic/github/Charles-DesignWare/hdl/blk_prince_cfb/prince_core.v:387: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+
+Statistics for case statements in always block at line 360 in file
+	'/home/ic/github/Charles-DesignWare/hdl/blk_prince_cfb/prince_core.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           364            |     no/auto      |
+===============================================
+
+Statistics for case statements in always block at line 438 in file
+	'/home/ic/github/Charles-DesignWare/hdl/blk_prince_cfb/prince_core.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           439            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 462 in file
+	'/home/ic/github/Charles-DesignWare/hdl/blk_prince_cfb/prince_core.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           463            |     no/auto      |
+|           329            |    auto/auto     |
+|           301            |    auto/auto     |
+|           279            |    auto/auto     |
+|            91            |    auto/auto     |
+|           206            |    auto/auto     |
+|           115            |    auto/auto     |
+|           313            |    auto/auto     |
+|           344            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine prince_core line 360 in file
+		'/home/ic/github/Charles-DesignWare/hdl/blk_prince_cfb/prince_core.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine prince_core line 432 in file
+		'/home/ic/github/Charles-DesignWare/hdl/blk_prince_cfb/prince_core.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   block_done_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine prince_core line 462 in file
+		'/home/ic/github/Charles-DesignWare/hdl/blk_prince_cfb/prince_core.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  plain_text_r_reg   | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   cipher_text_reg   | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (prince_core)
+1
+# store the unmapped results
+write -hierarchy -format ddc -output results/${TOP_MODULE_NAME}.unmapped.ddc
+Writing ddc file 'results/prince_cfb.unmapped.ddc'.
+1
+################################################################################
+# Step 3: constrain your design
+# You should specify the critical path, the input & output delay and the
+# environment attribute of your design, so that Design Compiler can correctly
+# synthesize your design with the required specfication.
+################################################################################
+# All the constraints are written in the following tcl script
+source dut.constraints.tcl
+1
+################################################################################
+# Create default path groups
+#
+# Seperate these paths can help improve optimization results.
+################################################################################
+set ports_clock_root   [filter_collection [get_attribute [get_clocks] sources] object_class==port]
+{clk}
+group_path -name REGOUT -to [all_outputs]
+1
+group_path -name REGIN -from [remove_from_collection [all_inputs]   ${ports_clock_root}]
+1
+group_path -name FEEDTHROUGH -from   [remove_from_collection [all_inputs] ${ports_clock_root}] -to [all_outputs]
+1
+################################################################################
+# Apply Additional Optimization Constraints
+################################################################################
+# Prevent assignment statements in the Verilog netlist.
+set_fix_multiple_port_nets -all -buffer_constants
+1
+################################################################################
+# Check for Design Errors. It is a good habit to check the design before you run
+# the synthesis.
+################################################################################
+check_design -summary
+ 
+****************************************
+check_design summary:
+Version:     R-2020.09-SP4
+Date:        Sat Jun  8 00:32:18 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                             113
+    Connected to power or ground (LINT-32)                         96
+    Nets connected to multiple pins on same cell (LINT-33)         17
+--------------------------------------------------------------------------------
+
+Information: Use the 'check_design' command for 
+	 more information about warnings. (LINT-98)
+
+1
+check_design > reports/${TOP_MODULE_NAME}.check_design.rpt; # dump to the file
+################################################################################
+# Step 4: compile the design
+# There exits lots of option for compile command. Please check the manual of
+# compile for further info.
+################################################################################
+compile_ultra
+Loading db file '/opt/synopsys/syn/R-2020.09-SP4/libraries/syn/dw_foundation.sldb'
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Performing power optimization. (PWR-850)
+Analyzing: "/home/ic/TechLib/t28_hpcp/logic/tcbn28hpcplusbwp12t40p140_180a/AN61001_20180514/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn28hpcplusbwp12t40p140_180a/tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs.db"
+Library analysis succeeded.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | R-2020.09-DWBB_202009.4 |     *     |
+| Licensed DW Building Blocks        | R-2020.09-DWBB_202009.4 |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 113 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'prince_cfb'
+
+Loaded alib file './alib-52/tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs.db.alib'
+  Building model 'DW01_NAND2'
+Information: Ungrouping hierarchy prince_core_inst before Pass 1 (OPT-776)
+Information: Ungrouping 1 of 2 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'prince_cfb'
+Information: The register 'state_reg[3]' is a constant and will be removed. (OPT-1206)
+Memory usage for J1 task 1844 Mbytes -- main task 1844 Mbytes.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'TIELBWP12T40P140' in the library 'tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIEHBWP12T40P140' in the library 'tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:06    1014.7      0.00       0.0   46366.2                           10603.0781
+    0:00:06    1013.7      0.00       0.0   46366.2                           10597.0410
+
+  Beginning Constant Register Removal
+  -----------------------------------
+    0:00:06    1013.7      0.00       0.0   46366.2                           10597.0410
+    0:00:06    1013.7      0.00       0.0   46366.2                           10597.0410
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:07     724.2      0.00       0.0   40516.3                           5949.7446
+    0:00:07     724.2      0.00       0.0   40516.3                           5949.7446
+    0:00:07     724.2      0.00       0.0   40516.3                           5949.7446
+    0:00:07     719.5      0.00       0.0   40516.3                           5839.0962
+    0:00:07     719.2      0.00       0.0   40516.3                           5837.9131
+    0:00:07     719.2      0.00       0.0   40516.3                           5837.9131
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:08     715.7      0.00       0.0   40494.3                           5796.4150
+    0:00:08     715.7      0.00       0.0   40494.3                           5796.4150
+    0:00:08     715.7      0.00       0.0   40494.3                           5796.4150
+    0:00:08     715.2      0.00       0.0   40494.6                           5779.6729
+    0:00:08     715.2      0.00       0.0   40494.6                           5779.6729
+    0:00:08     715.2      0.00       0.0   40494.6                           5779.6729
+    0:00:08     715.2      0.00       0.0   40494.6                           5779.6729
+    0:00:08     715.2      0.00       0.0   40494.6                           5779.6729
+    0:00:08     715.2      0.00       0.0   40494.6                           5779.6729
+    0:00:08     715.2      0.00       0.0   40494.6                           5779.6729
+    0:00:08     715.2      0.00       0.0   40494.6                           5779.6729
+    0:00:08     715.2      0.00       0.0   40494.6                           5779.6729
+    0:00:08     715.2      0.00       0.0   40494.6                           5779.6729
+    0:00:08     715.2      0.00       0.0   40494.6                           5779.6729
+    0:00:08     715.2      0.00       0.0   40494.6                           5779.6729
+    0:00:08     715.2      0.00       0.0   40494.6                           5779.6729
+    0:00:08     715.2      0.00       0.0   40494.6                           5779.6729
+    0:00:08     715.2      0.00       0.0   40494.6                           5779.6729
+    0:00:08     715.2      0.00       0.0   40494.6                           5779.6729
+    0:00:08     715.2      0.00       0.0   40494.6                           5779.6729
+    0:00:08     715.2      0.00       0.0   40494.6                           5779.6729
+    0:00:08     715.2      0.00       0.0   40494.6                           5779.6729
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:08     715.2      0.00       0.0   40494.6                           5779.6729
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+    0:00:09     759.9      0.00       0.0       0.0                           6691.6826
+    0:00:09     759.9      0.00       0.0       0.0                           6691.6826
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:09     759.9      0.00       0.0       0.0                           6691.6826
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:09     759.4      0.00       0.0       0.0                           6674.1348
+Loading db file '/home/ic/TechLib/t28_hpcp/logic/tcbn28hpcplusbwp12t40p140_180a/AN61001_20180514/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn28hpcplusbwp12t40p140_180a/tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+################################################################################
+# Note: compile_ultra does not work for some open source libraries, i.e. Nangate
+# since there are some cells missing for these libraries.
+# Sol: use compile instead. You can use compile_ultra for the commerial library
+# such TSMC45nm, which has a complete set of gates supported.
+#
+# compile_ultra -no_autoungroup; # keep hierarchy for the purpose of debug
+################################################################################
+# High-effort area optimization which improves the area without degrading the
+# timing or leakage of the compiled design
+optimize_netlist -area
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+
+
+  Updating timing information
+Information: The library cell 'TIELBWP12T40P140' in the library 'tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIEHBWP12T40P140' in the library 'tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+
+  Beginning Area Optimization
+  -----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:02     759.4      0.00       0.0       0.0                           6674.1348
+    0:00:03     758.9      0.00       0.0       0.0                           6668.3989
+Loading db file '/home/ic/TechLib/t28_hpcp/logic/tcbn28hpcplusbwp12t40p140_180a/AN61001_20180514/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn28hpcplusbwp12t40p140_180a/tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
+################################################################################
+# Step 5: write out final design and reports
+# The files include:
+# - .ddc: binary format used for subsequent Design Compiler sessions
+# - .v: Verilog netlist for gate-level simulation and P&R
+# - .sdf: SDF backannotated file containing gate and net latency
+# - .sdc: SDC constraints for ASCII flow
+################################################################################
+change_names -rules verilog -hierarchy
+1
+# Write out design
+write -format verilog -hierarchy -output results/${TOP_MODULE_NAME}.mapped.v
+Writing verilog file '/home/ic/github/Charles-DesignWare/syn/blk_prince_cfb/results/prince_cfb.mapped.v'.
+1
+write -format ddc -hierarchy -output results/${TOP_MODULE_NAME}.mapped.ddc
+Writing ddc file 'results/prince_cfb.mapped.ddc'.
+1
+write_sdf results/${TOP_MODULE_NAME}.mapped.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/ic/github/Charles-DesignWare/syn/blk_prince_cfb/results/prince_cfb.mapped.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+1
+write_sdc -nosplit results/${TOP_MODULE_NAME}.mapped.sdc
+1
+# Generate reports
+report_qor > reports/${TOP_MODULE_NAME}.mapped.qor.rpt
+report_timing -transition_time -nets -attribute -nosplit   > reports/${TOP_MODULE_NAME}.mapped.timing.rpt
+report_area -nosplit > reports/${TOP_MODULE_NAME}.mapped.area.rpt
+report_power -nosplit > reports/${TOP_MODULE_NAME}.mapped.power.rpt
+################################################################################
+# Exit Design Compiler
+################################################################################
+exit
+
+Memory usage for this session 1844 Mbytes.
+Memory usage for this session including child processes 1844 Mbytes.
+CPU usage for this session 91 seconds ( 0.03 hours ).
+Elapsed time for this session 97 seconds ( 0.03 hours ).
+
+Thank you...

@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : prince
+Version: R-2020.09-SP4
+Date   : Sat Jun  8 09:19:01 2024
+****************************************
+
+Library(s) Used:
+
+    tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs (File: /home/ic/TechLib/t28_hpcp/logic/tcbn28hpcplusbwp12t40p140_180a/AN61001_20180514/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn28hpcplusbwp12t40p140_180a/tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs.db)
+
+Number of ports:                          337
+Number of nets:                          7120
+Number of cells:                         6816
+Number of combinational cells:           6169
+Number of sequential cells:               646
+Number of macros/black boxes:               0
+Number of buf/inv:                       1547
+Number of references:                      28
+
+Combinational area:               4841.423995
+Buf/Inv area:                      573.551994
+Noncombinational area:            1953.503954
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  6794.927950
+Total area:                 undefined
+1

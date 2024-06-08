@@ -1,0 +1,311 @@
+.
+├── common
+│   ├── dffe.v
+│   ├── dffre.v
+│   ├── dffr.v
+│   ├── dff.v
+│   ├── fifo.v
+│   └── rs.v
+├── document
+│   ├── divider.pdf
+│   ├── EDI13.1workshoplab1.pdf
+│   ├── linux\ command.pdf
+│   └── tutorial_slides.pdf
+├── hdl
+│   ├── blk_divider
+│   │   ├── divider.v
+│   │   └── sanity.f
+│   ├── blk_prince
+│   │   ├── prince_core.v
+│   │   ├── prince_round_functions.v
+│   │   ├── prince.v
+│   │   └── sanity.f
+│   └── blk_prince_cfb
+│       ├── prince_cfb.v
+│       ├── prince_core.v
+│       └── sanity.f
+├── layout
+│   └── blk_divider
+│       ├── clean
+│       ├── run
+│       └── scripts
+│           ├── divider.ioc
+│           ├── mmc2.view
+│           └── top.tcl
+├── LICENSE
+├── README.md
+├── script
+│   └── sourceme.sh
+├── syn
+│   ├── blk_divider
+│   │   ├── clean
+│   │   ├── dut.constraints.tcl
+│   │   ├── run
+│   │   └── run.tcl
+│   ├── blk_prince
+│   │   ├── alib-52
+│   │   │   └── tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs.db.alib
+│   │   ├── clean
+│   │   ├── command.log
+│   │   ├── default.svf
+│   │   ├── dut.constraints.tcl
+│   │   ├── reports
+│   │   │   ├── prince.check_design.rpt
+│   │   │   ├── prince.mapped.area.rpt
+│   │   │   ├── prince.mapped.power.rpt
+│   │   │   ├── prince.mapped.qor.rpt
+│   │   │   └── prince.mapped.timing.rpt
+│   │   ├── results
+│   │   │   ├── prince.mapped.ddc
+│   │   │   ├── prince.mapped.sdc
+│   │   │   ├── prince.mapped.sdf
+│   │   │   ├── prince.mapped.v
+│   │   │   └── prince.unmapped.ddc
+│   │   ├── run
+│   │   ├── run.log
+│   │   ├── run.tcl
+│   │   └── WORK
+│   │       ├── PRINCE_CORE.mr
+│   │       ├── prince_core-verilog.pvl
+│   │       ├── prince_core-verilog.syn
+│   │       ├── PRINCE.mr
+│   │       ├── prince-verilog.pvl
+│   │       └── prince-verilog.syn
+│   └── blk_prince_cfb
+│       ├── alib-52
+│       │   └── tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs.db.alib
+│       ├── clean
+│       ├── command.log
+│       ├── default.svf
+│       ├── dut.constraints.tcl
+│       ├── reports
+│       │   ├── prince_cfb.check_design.rpt
+│       │   ├── prince_cfb.mapped.area.rpt
+│       │   ├── prince_cfb.mapped.power.rpt
+│       │   ├── prince_cfb.mapped.qor.rpt
+│       │   └── prince_cfb.mapped.timing.rpt
+│       ├── results
+│       │   ├── prince_cfb.mapped.ddc
+│       │   ├── prince_cfb.mapped.sdc
+│       │   ├── prince_cfb.mapped.sdf
+│       │   ├── prince_cfb.mapped.v
+│       │   └── prince_cfb.unmapped.ddc
+│       ├── run
+│       ├── run.log
+│       ├── run.tcl
+│       └── WORK
+│           ├── PRINCE_CFB.mr
+│           ├── prince_cfb-verilog.pvl
+│           ├── prince_cfb-verilog.syn
+│           ├── PRINCE_CORE.mr
+│           ├── prince_core-verilog.pvl
+│           └── prince_core-verilog.syn
+└── verification
+    ├── blk_divider
+    │   ├── th
+    │   │   ├── divider_tb.v
+    │   │   └── sim.f
+    │   ├── ut_behav
+    │   │   ├── clean
+    │   │   └── run_vcs
+    │   ├── ut_layout
+    │   │   ├── clean
+    │   │   └── run
+    │   └── ut_syn
+    │       ├── clean
+    │       └── run
+    ├── blk_prince
+    │   ├── th
+    │   │   ├── sim.f
+    │   │   ├── tb_prince_core.v
+    │   │   └── tb_prince.v
+    │   └── ut_behav
+    │       ├── clean
+    │       ├── csrc
+    │       │   ├── _32305_archive_1.so -> .//../simv.daidir//_32305_archive_1.so
+    │       │   ├── _32333_archive_1.so -> .//../simv.daidir//_32333_archive_1.so
+    │       │   ├── _32334_archive_1.so -> .//../simv.daidir//_32334_archive_1.so
+    │       │   ├── _32335_archive_1.so -> .//../simv.daidir//_32335_archive_1.so
+    │       │   ├── archive.0
+    │       │   │   ├── _32305_archive_1.a
+    │       │   │   ├── _32305_archive_1.a.info
+    │       │   │   ├── _32333_archive_1.a
+    │       │   │   ├── _32333_archive_1.a.info
+    │       │   │   ├── _32334_archive_1.a
+    │       │   │   ├── _32334_archive_1.a.info
+    │       │   │   ├── _32335_archive_1.a
+    │       │   │   └── _32335_archive_1.a.info
+    │       │   ├── cgincr.sdb
+    │       │   ├── cginfo.json
+    │       │   ├── cgproc.32305.json
+    │       │   ├── cgproc.32333.json
+    │       │   ├── cgproc.32334.json
+    │       │   ├── cgproc.32335.json
+    │       │   ├── clean.sh
+    │       │   ├── diag
+    │       │   ├── filelist
+    │       │   ├── filelist.cu
+    │       │   ├── filelist.dpi
+    │       │   ├── filelist.hsopt
+    │       │   ├── filelist.hsopt.llvm2_0.objs
+    │       │   ├── filelist.hsopt.objs
+    │       │   ├── filelist.pli
+    │       │   ├── hsim
+    │       │   │   └── hsim.sdb
+    │       │   ├── import_dpic.h
+    │       │   ├── Makefile
+    │       │   ├── Makefile.hsopt
+    │       │   ├── objs
+    │       │   │   └── amcQw_d.o
+    │       │   ├── product_timestamp
+    │       │   ├── rmapats.c
+    │       │   ├── rmapats.h
+    │       │   ├── rmapats.m
+    │       │   ├── rmapats_mop.o
+    │       │   ├── rmapats.o
+    │       │   ├── rmar0.h
+    │       │   ├── rmar.c
+    │       │   ├── rmar.h
+    │       │   ├── rmar_llvm_0_0.o
+    │       │   ├── rmar_llvm_0_1.o
+    │       │   ├── rmar_nd.o
+    │       │   ├── rmar.o
+    │       │   ├── SIM_l.o
+    │       │   ├── vcspieces.incr
+    │       │   ├── _vcs_pli_stub_.c
+    │       │   └── _vcs_pli_stub_.o
+    │       ├── novas.conf
+    │       ├── novas_dump.log
+    │       ├── novas.fsdb
+    │       ├── novas.rc
+    │       ├── run_vcs
+    │       ├── simv
+    │       ├── simv.daidir
+    │       │   ├── _32305_archive_1.so
+    │       │   ├── _32333_archive_1.so
+    │       │   ├── _32334_archive_1.so
+    │       │   ├── _32335_archive_1.so
+    │       │   ├── binmap.sdb
+    │       │   ├── build_db
+    │       │   ├── cc
+    │       │   │   ├── cc_bcode.db
+    │       │   │   └── cc_dummy_file
+    │       │   ├── cgname.json
+    │       │   ├── covg_defs
+    │       │   ├── debug_dump
+    │       │   │   ├── AllModulesSkeletons.sdb
+    │       │   │   ├── dumpcheck.db
+    │       │   │   ├── dve_debug.db.gz
+    │       │   │   ├── fsearch
+    │       │   │   │   ├── check_fsearch_db
+    │       │   │   │   ├── fsearch.stat
+    │       │   │   │   ├── idents_tapi.xml.gz
+    │       │   │   │   └── idents_YZqoSi.xml.gz
+    │       │   │   ├── HsimSigOptDb.sdb
+    │       │   │   ├── src_files_verilog
+    │       │   │   ├── topmodules
+    │       │   │   └── vir.sdb
+    │       │   ├── eblklvl.db
+    │       │   ├── elabcomLog
+    │       │   │   ├── compiler.log
+    │       │   │   ├── novas.rc
+    │       │   │   ├── pes.bat
+    │       │   │   └── turbo.log
+    │       │   ├── elabmoddb.sdb
+    │       │   ├── external_functions
+    │       │   ├── hslevel_callgraph.sdb
+    │       │   ├── hslevel_level.sdb
+    │       │   ├── hslevel_rtime_level.sdb
+    │       │   ├── hsscan_cfg.dat
+    │       │   ├── indcall_32305.sdb
+    │       │   ├── indcall_32333.sdb
+    │       │   ├── indcall_32334.sdb
+    │       │   ├── indcall_32335.sdb
+    │       │   ├── indcall.sdb
+    │       │   ├── kdb.elab++
+    │       │   │   ├── HDB
+    │       │   │   │   └── tdc.list
+    │       │   │   ├── _libFileMap
+    │       │   │   ├── _paramSetElabDB
+    │       │   │   ├── PMAP
+    │       │   │   │   └── pmap.db
+    │       │   │   ├── sdb
+    │       │   │   │   ├── block.db
+    │       │   │   │   ├── inst.db
+    │       │   │   │   ├── master.db
+    │       │   │   │   ├── sdb.db
+    │       │   │   │   ├── sdbId.db
+    │       │   │   │   ├── str.db
+    │       │   │   │   └── varMaster.db
+    │       │   │   ├── _smElabDBMap
+    │       │   │   ├── _stnElabDB
+    │       │   │   └── work.lib++
+    │       │   │       ├── AbsDocNameTbl
+    │       │   │       ├── lib.dep
+    │       │   │       ├── libfile
+    │       │   │       ├── libfile.1-
+    │       │   │       ├── MapTbl
+    │       │   │       ├── oh.etc
+    │       │   │       │   ├── _oharch
+    │       │   │       │   └── oh.rc
+    │       │   │       └── tdc.sdb
+    │       │   ├── modelsave.sdb
+    │       │   ├── nsparam.dat
+    │       │   ├── pcc.sdb
+    │       │   ├── pcxpxmr.dat
+    │       │   ├── prof.sdb
+    │       │   ├── rmapats.dat
+    │       │   ├── rmapats.so
+    │       │   ├── saifNetInfo.db
+    │       │   ├── simv.kdb
+    │       │   ├── stitch_nsparam.dat
+    │       │   ├── ttIncr_32305.sdb
+    │       │   ├── ttIncr_32333.sdb
+    │       │   ├── ttIncr_32334.sdb
+    │       │   ├── ttIncr_32335.sdb
+    │       │   ├── tt.sdb
+    │       │   ├── vcselab_master_hsim_elabout.db
+    │       │   ├── vcselab_misc_hsdef.db
+    │       │   ├── vcselab_misc_hsim_elab.db
+    │       │   ├── vcselab_misc_hsim_fegate.db
+    │       │   ├── vcselab_misc_hsim_lvl.db
+    │       │   ├── vcselab_misc_hsim_name.db
+    │       │   ├── vcselab_misc_hsim_uds.db
+    │       │   ├── vcselab_misc_midd.db
+    │       │   ├── vcselab_misc_mnmn.db
+    │       │   ├── vcselab_misc_partition.db
+    │       │   ├── vcselab_misc_vcselabref.db
+    │       │   ├── vcselab_misc_vpdnodenums
+    │       │   └── vcs_rebuild
+    │       ├── ucli.key
+    │       ├── vcs_sim.log
+    │       ├── verdi_config_file
+    │       ├── verdiLog
+    │       │   ├── compiler.log
+    │       │   ├── exe.log
+    │       │   ├── fsdb.00000.log
+    │       │   ├── fsdb.00001.log
+    │       │   ├── novas_autosave.ses
+    │       │   ├── novas_autosave.ses.config
+    │       │   ├── novas_autosave.ses.png
+    │       │   ├── novas_autosave.ses.wave.0
+    │       │   ├── novas.log
+    │       │   ├── novas.rc
+    │       │   ├── pes.bat
+    │       │   ├── swap.log
+    │       │   ├── ToNetlist.log
+    │       │   ├── turbo.log
+    │       │   ├── verdi.cmd
+    │       │   └── verdi_perf_err.log
+    │       └── verilog.dump
+    └── blk_prince_cfb
+        ├── th
+        │   ├── sim.f
+        │   ├── tb_prince_cfb_load_test.v
+        │   ├── tb_prince_cfb.v
+        │   └── tb_prince_core.v
+        └── ut_behav
+            ├── clean
+            └── run_vcs
+
+51 directories, 257 files

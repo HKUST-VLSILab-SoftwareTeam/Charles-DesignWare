@@ -1,4 +1,10 @@
-#!/bin/sh
+#!/bin/tcsh
 
-rm -fr reports results alib* WORK
-rm *.log *.svf
+# Loop through all files in the current directory
+foreach file (*)
+    # Check if the file is not 'clean' or 'run_vcs'
+    if ("$file" != "clean" && "$file" != "run" && "$file" != "run.tcl" && "$file" != "dut.constraints.tcl") then
+        # Remove the file
+        rm -rf "$file"
+    endif
+end

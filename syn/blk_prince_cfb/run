@@ -1,0 +1,9 @@
+#!/bin/tcsh -f
+
+# sourceme: set global env parameters
+source ../../script/sourceme.sh
+
+echo $WORK_ROOT
+
+# run dc shell
+dc_shell -f run.tcl | tee -i run.log

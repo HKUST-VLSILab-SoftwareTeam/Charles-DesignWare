@@ -1,0 +1,268 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 1
+        -transition_time
+Design : prince_cfb
+Version: R-2020.09-SP4
+Date   : Sat Jun  8 00:33:44 2024
+****************************************
+
+Operating Conditions: tt0p9v85c   Library: tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+Wire Load Model Mode: segmented
+
+  Startpoint: encrypt (input port clocked by clk)
+  Endpoint: prince_core_inst_cipher_text_reg_5_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: REGIN
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  prince_cfb         ZeroWireload          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock clk (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  input external delay                                              0.50       0.50 f
+  encrypt (in)                                            0.10      0.00       0.50 f
+  encrypt (net)                                26                   0.00       0.50 f
+  U821/ZN (INVD0BWP12T40P140)                             0.12      0.10       0.60 r
+  n1473 (net)                                  22                   0.00       0.60 r
+  U932/ZN (NR3D0BWP12T40P140)                             0.04      0.03       0.63 f
+  n1417 (net)                                   2                   0.00       0.63 f
+  U933/ZN (INVD0BWP12T40P140)                             0.04      0.04       0.66 r
+  n1200 (net)                                   8                   0.00       0.66 r
+  U934/ZN (OAI21D0BWP12T40P140)                           0.05      0.03       0.70 f
+  n833 (net)                                    2                   0.00       0.70 f
+  U935/Z (AO21D1BWP12T40P140)                             0.02      0.04       0.73 f
+  n849 (net)                                    3                   0.00       0.73 f
+  U936/ZN (NR2D1BWP12T40P140)                             0.04      0.02       0.76 r
+  n1243 (net)                                   5                   0.00       0.76 r
+  U937/ZN (INVD0BWP12T40P140)                             0.05      0.04       0.80 f
+  n1336 (net)                                   9                   0.00       0.80 f
+  U942/ZN (CKND2D1BWP12T40P140)                           0.04      0.03       0.83 r
+  n1262 (net)                                   5                   0.00       0.83 r
+  U943/ZN (INVD0BWP12T40P140)                             0.04      0.03       0.87 f
+  n1139 (net)                                   6                   0.00       0.87 f
+  U944/ZN (CKND2D1BWP12T40P140)                           0.03      0.02       0.89 r
+  n1361 (net)                                   2                   0.00       0.89 r
+  U945/ZN (INVD0BWP12T40P140)                             0.04      0.04       0.92 f
+  n1413 (net)                                   7                   0.00       0.92 f
+  U844/ZN (AOI21D1BWP12T40P140)                           0.02      0.02       0.94 r
+  n913 (net)                                    1                   0.00       0.94 r
+  U1080/ZN (OAI21D0BWP12T40P140)                          0.03      0.02       0.96 f
+  n915 (net)                                    1                   0.00       0.96 f
+  U1081/ZN (AOI211D1BWP12T40P140)                         0.04      0.03       1.00 r
+  n1301 (net)                                   3                   0.00       1.00 r
+  U1082/ZN (OAI21D0BWP12T40P140)                          0.06      0.02       1.02 f
+  n918 (net)                                    1                   0.00       1.02 f
+  U1083/ZN (OAI31D0BWP12T40P140)                          0.08      0.04       1.06 r
+  n988 (net)                                    4                   0.00       1.06 r
+  U1144/ZN (INR2D1BWP12T40P140)                           0.04      0.03       1.09 r
+  n990 (net)                                    2                   0.00       1.09 r
+  U1145/ZN (OAI211D0BWP12T40P140)                         0.07      0.03       1.12 f
+  n989 (net)                                    1                   0.00       1.12 f
+  U1146/ZN (AOI21D1BWP12T40P140)                          0.02      0.03       1.14 r
+  n991 (net)                                    1                   0.00       1.14 r
+  U1147/ZN (AOI21D1BWP12T40P140)                          0.02      0.02       1.16 f
+  n1160 (net)                                   2                   0.00       1.16 f
+  U1148/ZN (INVD0BWP12T40P140)                            0.02      0.02       1.18 r
+  n1159 (net)                                   2                   0.00       1.18 r
+  U1163/Z (XOR2D1BWP12T40P140)                            0.01      0.03       1.21 f
+  n1018 (net)                                   2                   0.00       1.21 f
+  U1164/ZN (INVD0BWP12T40P140)                            0.02      0.02       1.23 r
+  n1125 (net)                                   2                   0.00       1.23 r
+  U1275/Z (XOR2D1BWP12T40P140)                            0.01      0.03       1.26 f
+  n1213 (net)                                   2                   0.00       1.26 f
+  U1276/ZN (MOAI22D0BWP12T40P140)                         0.07      0.05       1.30 f
+  n1352 (net)                                   5                   0.00       1.30 f
+  U1373/ZN (INVD0BWP12T40P140)                            0.04      0.04       1.34 r
+  n1487 (net)                                   4                   0.00       1.34 r
+  U1545/ZN (OAI21D0BWP12T40P140)                          0.03      0.02       1.36 f
+  n1486 (net)                                   1                   0.00       1.36 f
+  U1546/ZN (AOI21D1BWP12T40P140)                          0.02      0.02       1.38 r
+  n1488 (net)                                   1                   0.00       1.38 r
+  U1547/ZN (OAI22D0BWP12T40P140)                          0.03      0.03       1.41 f
+  n1493 (net)                                   1                   0.00       1.41 f
+  U1548/ZN (AOI22D1BWP12T40P140)                          0.03      0.02       1.43 r
+  n1523 (net)                                   2                   0.00       1.43 r
+  U1558/ZN (ND3D0BWP12T40P140)                            0.03      0.02       1.45 f
+  n1520 (net)                                   1                   0.00       1.45 f
+  U1559/ZN (OAI211D0BWP12T40P140)                         0.02      0.02       1.47 r
+  n765 (net)                                    1                   0.00       1.47 r
+  prince_core_inst_cipher_text_reg_5_/D (DFD1BWP12T40P140)     0.02     0.00     1.47 r
+  data arrival time                                                            1.47
+
+  clock clk (rise edge)                                             5.00       5.00
+  clock network delay (ideal)                                       0.00       5.00
+  prince_core_inst_cipher_text_reg_5_/CP (DFD1BWP12T40P140)         0.00       5.00 r
+  library setup time                                               -0.02       4.98
+  data required time                                                           4.98
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                           4.98
+  data arrival time                                                           -1.47
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                  3.51
+
+
+  Startpoint: state_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: block_busy_n
+            (output port clocked by clk)
+  Path Group: REGOUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  prince_cfb         ZeroWireload          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout     Trans      Incr       Path      Attributes
+  ------------------------------------------------------------------------------------------
+  clock clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  state_reg_0_/CP (DFD1BWP12T40P140)       0.00      0.00       0.00 r
+  state_reg_0_/Q (DFD1BWP12T40P140)        0.02      0.06       0.06 f
+  state[0] (net)                 6                   0.00       0.06 f
+  U784/ZN (NR2D1BWP12T40P140)              0.02      0.02       0.09 r
+  n1527 (net)                    4                   0.00       0.09 r
+  U877/ZN (CKND2D1BWP12T40P140)            0.08      0.05       0.14 f
+  n1531 (net)                    4                   0.00       0.14 f
+  U820/ZN (CKND12BWP12T40P140)             0.29      0.19       0.33 r
+  block_busy_n (net)             2                   0.00       0.33 r
+  block_busy_n (out)                       0.29      0.00       0.33 r
+  data arrival time                                             0.33
+
+  clock clk (rise edge)                              5.00       5.00
+  clock network delay (ideal)                        0.00       5.00
+  output external delay                             -0.50       4.50
+  data required time                                            4.50
+  ------------------------------------------------------------------------------------------
+  data required time                                            4.50
+  data arrival time                                            -0.33
+  ------------------------------------------------------------------------------------------
+  slack (MET)                                                   4.17
+
+
+  Startpoint: state_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: prince_core_inst_cipher_text_reg_5_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  prince_cfb         ZeroWireload          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock clk (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  state_reg_2_/CP (DFD1BWP12T40P140)                      0.00      0.00       0.00 r
+  state_reg_2_/Q (DFD1BWP12T40P140)                       0.02      0.06       0.06 f
+  state[2] (net)                                3                   0.00       0.06 f
+  U929/ZN (NR2D1BWP12T40P140)                             0.08      0.05       0.11 r
+  n1214 (net)                                  16                   0.00       0.11 r
+  U930/ZN (INVD0BWP12T40P140)                             0.13      0.10       0.21 f
+  n1215 (net)                                  21                   0.00       0.21 f
+  U931/ZN (NR3D0BWP12T40P140)                             0.06      0.06       0.26 r
+  n1235 (net)                                   6                   0.00       0.26 r
+  U936/ZN (NR2D1BWP12T40P140)                             0.03      0.03       0.29 f
+  n1243 (net)                                   5                   0.00       0.29 f
+  U937/ZN (INVD0BWP12T40P140)                             0.05      0.04       0.33 r
+  n1336 (net)                                   9                   0.00       0.33 r
+  U942/ZN (CKND2D1BWP12T40P140)                           0.04      0.03       0.36 f
+  n1262 (net)                                   5                   0.00       0.36 f
+  U943/ZN (INVD0BWP12T40P140)                             0.04      0.04       0.40 r
+  n1139 (net)                                   6                   0.00       0.40 r
+  U944/ZN (CKND2D1BWP12T40P140)                           0.04      0.02       0.42 f
+  n1361 (net)                                   2                   0.00       0.42 f
+  U945/ZN (INVD0BWP12T40P140)                             0.05      0.04       0.46 r
+  n1413 (net)                                   7                   0.00       0.46 r
+  U1050/ZN (AOI21D1BWP12T40P140)                          0.02      0.02       0.47 f
+  n891 (net)                                    1                   0.00       0.47 f
+  U1051/ZN (OAI21D0BWP12T40P140)                          0.02      0.01       0.49 r
+  n893 (net)                                    1                   0.00       0.49 r
+  U1052/ZN (AOI211D1BWP12T40P140)                         0.03      0.02       0.51 f
+  n1411 (net)                                   3                   0.00       0.51 f
+  U1053/ZN (OAI21D0BWP12T40P140)                          0.05      0.02       0.53 r
+  n894 (net)                                    1                   0.00       0.53 r
+  U1054/ZN (OAI31D0BWP12T40P140)                          0.14      0.07       0.60 f
+  n1076 (net)                                   7                   0.00       0.60 f
+  U1144/ZN (INR2D1BWP12T40P140)                           0.04      0.03       0.62 r
+  n990 (net)                                    2                   0.00       0.62 r
+  U1145/ZN (OAI211D0BWP12T40P140)                         0.07      0.03       0.65 f
+  n989 (net)                                    1                   0.00       0.65 f
+  U1146/ZN (AOI21D1BWP12T40P140)                          0.02      0.03       0.68 r
+  n991 (net)                                    1                   0.00       0.68 r
+  U1147/ZN (AOI21D1BWP12T40P140)                          0.02      0.02       0.69 f
+  n1160 (net)                                   2                   0.00       0.69 f
+  U1148/ZN (INVD0BWP12T40P140)                            0.02      0.02       0.72 r
+  n1159 (net)                                   2                   0.00       0.72 r
+  U1163/Z (XOR2D1BWP12T40P140)                            0.01      0.03       0.75 f
+  n1018 (net)                                   2                   0.00       0.75 f
+  U1164/ZN (INVD0BWP12T40P140)                            0.02      0.02       0.76 r
+  n1125 (net)                                   2                   0.00       0.76 r
+  U1275/Z (XOR2D1BWP12T40P140)                            0.01      0.03       0.79 f
+  n1213 (net)                                   2                   0.00       0.79 f
+  U1276/ZN (MOAI22D0BWP12T40P140)                         0.07      0.05       0.84 f
+  n1352 (net)                                   5                   0.00       0.84 f
+  U1373/ZN (INVD0BWP12T40P140)                            0.04      0.04       0.87 r
+  n1487 (net)                                   4                   0.00       0.87 r
+  U1545/ZN (OAI21D0BWP12T40P140)                          0.03      0.02       0.90 f
+  n1486 (net)                                   1                   0.00       0.90 f
+  U1546/ZN (AOI21D1BWP12T40P140)                          0.02      0.02       0.92 r
+  n1488 (net)                                   1                   0.00       0.92 r
+  U1547/ZN (OAI22D0BWP12T40P140)                          0.03      0.03       0.94 f
+  n1493 (net)                                   1                   0.00       0.94 f
+  U1548/ZN (AOI22D1BWP12T40P140)                          0.03      0.02       0.97 r
+  n1523 (net)                                   2                   0.00       0.97 r
+  U1558/ZN (ND3D0BWP12T40P140)                            0.03      0.02       0.99 f
+  n1520 (net)                                   1                   0.00       0.99 f
+  U1559/ZN (OAI211D0BWP12T40P140)                         0.02      0.02       1.01 r
+  n765 (net)                                    1                   0.00       1.01 r
+  prince_core_inst_cipher_text_reg_5_/D (DFD1BWP12T40P140)     0.02     0.00     1.01 r
+  data arrival time                                                            1.01
+
+  clock clk (rise edge)                                             5.00       5.00
+  clock network delay (ideal)                                       0.00       5.00
+  prince_core_inst_cipher_text_reg_5_/CP (DFD1BWP12T40P140)         0.00       5.00 r
+  library setup time                                               -0.02       4.98
+  data required time                                                           4.98
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                           4.98
+  data arrival time                                                           -1.01
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                  3.98
+
+
+1

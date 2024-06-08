@@ -1,0 +1,241 @@
+ 
+****************************************
+check_design summary:
+Version:     R-2020.09-SP4
+Date:        Sat Jun  8 00:32:18 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                             113
+    Connected to power or ground (LINT-32)                         96
+    Nets connected to multiple pins on same cell (LINT-33)         17
+--------------------------------------------------------------------------------
+
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[63]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[62]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[61]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[60]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[59]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[58]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[57]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[56]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[55]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[54]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[53]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[52]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[51]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[50]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[49]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[48]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[47]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[46]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[45]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[44]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[43]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[42]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[41]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[40]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[39]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[38]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[37]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[36]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[35]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[34]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[33]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[32]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[31]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[30]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[29]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[28]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[27]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[26]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[25]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[24]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[23]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[22]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[21]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[20]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[19]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[18]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[17]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k0[16]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[63]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[62]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[61]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[60]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[59]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[58]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[57]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[56]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[55]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[54]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[53]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[52]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[51]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[50]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[49]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[48]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[47]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[46]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[45]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[44]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[43]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[42]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[41]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[40]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[39]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[38]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[37]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[36]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[35]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[34]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[33]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[32]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[31]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[30]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[29]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[28]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[27]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[26]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[25]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[24]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[23]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[22]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[21]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[20]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[19]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[18]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[17]' is connected to logic 0. 
+Warning: In design 'prince_cfb', a pin on submodule 'prince_core_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'k1[16]' is connected to logic 0. 
+Warning: In design 'prince_cfb', the same net is connected to more than one pin on submodule 'prince_core_inst'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'k0[63]', 'k0[62]'', 'k0[61]', 'k0[60]', 'k0[59]', 'k0[58]', 'k0[57]', 'k0[56]', 'k0[55]', 'k0[54]', 'k0[53]', 'k0[52]', 'k0[51]', 'k0[50]', 'k0[49]', 'k0[48]', 'k0[47]', 'k0[46]', 'k0[45]', 'k0[44]', 'k0[43]', 'k0[42]', 'k0[41]', 'k0[40]', 'k0[39]', 'k0[38]', 'k0[37]', 'k0[36]', 'k0[35]', 'k0[34]', 'k0[33]', 'k0[32]', 'k0[31]', 'k0[30]', 'k0[29]', 'k0[28]', 'k0[27]', 'k0[26]', 'k0[25]', 'k0[24]', 'k0[23]', 'k0[22]', 'k0[21]', 'k0[20]', 'k0[19]', 'k0[18]', 'k0[17]', 'k0[16]', 'k1[63]', 'k1[62]', 'k1[61]', 'k1[60]', 'k1[59]', 'k1[58]', 'k1[57]', 'k1[56]', 'k1[55]', 'k1[54]', 'k1[53]', 'k1[52]', 'k1[51]', 'k1[50]', 'k1[49]', 'k1[48]', 'k1[47]', 'k1[46]', 'k1[45]', 'k1[44]', 'k1[43]', 'k1[42]', 'k1[41]', 'k1[40]', 'k1[39]', 'k1[38]', 'k1[37]', 'k1[36]', 'k1[35]', 'k1[34]', 'k1[33]', 'k1[32]', 'k1[31]', 'k1[30]', 'k1[29]', 'k1[28]', 'k1[27]', 'k1[26]', 'k1[25]', 'k1[24]', 'k1[23]', 'k1[22]', 'k1[21]', 'k1[20]', 'k1[19]', 'k1[18]', 'k1[17]', 'k1[16]'.
+Warning: In design 'prince_cfb', the same net is connected to more than one pin on submodule 'prince_core_inst'. (LINT-33)
+   Net 'chip_id[15]' is connected to pins 'k0[15]', 'k1[15]''.
+Warning: In design 'prince_cfb', the same net is connected to more than one pin on submodule 'prince_core_inst'. (LINT-33)
+   Net 'chip_id[14]' is connected to pins 'k0[14]', 'k1[14]''.
+Warning: In design 'prince_cfb', the same net is connected to more than one pin on submodule 'prince_core_inst'. (LINT-33)
+   Net 'chip_id[13]' is connected to pins 'k0[13]', 'k1[13]''.
+Warning: In design 'prince_cfb', the same net is connected to more than one pin on submodule 'prince_core_inst'. (LINT-33)
+   Net 'chip_id[12]' is connected to pins 'k0[12]', 'k1[12]''.
+Warning: In design 'prince_cfb', the same net is connected to more than one pin on submodule 'prince_core_inst'. (LINT-33)
+   Net 'chip_id[11]' is connected to pins 'k0[11]', 'k1[11]''.
+Warning: In design 'prince_cfb', the same net is connected to more than one pin on submodule 'prince_core_inst'. (LINT-33)
+   Net 'chip_id[10]' is connected to pins 'k0[10]', 'k1[10]''.
+Warning: In design 'prince_cfb', the same net is connected to more than one pin on submodule 'prince_core_inst'. (LINT-33)
+   Net 'chip_id[9]' is connected to pins 'k0[9]', 'k1[9]''.
+Warning: In design 'prince_cfb', the same net is connected to more than one pin on submodule 'prince_core_inst'. (LINT-33)
+   Net 'chip_id[8]' is connected to pins 'k0[8]', 'k1[8]''.
+Warning: In design 'prince_cfb', the same net is connected to more than one pin on submodule 'prince_core_inst'. (LINT-33)
+   Net 'chip_id[7]' is connected to pins 'k0[7]', 'k1[7]''.
+Warning: In design 'prince_cfb', the same net is connected to more than one pin on submodule 'prince_core_inst'. (LINT-33)
+   Net 'chip_id[6]' is connected to pins 'k0[6]', 'k1[6]''.
+Warning: In design 'prince_cfb', the same net is connected to more than one pin on submodule 'prince_core_inst'. (LINT-33)
+   Net 'chip_id[5]' is connected to pins 'k0[5]', 'k1[5]''.
+Warning: In design 'prince_cfb', the same net is connected to more than one pin on submodule 'prince_core_inst'. (LINT-33)
+   Net 'chip_id[4]' is connected to pins 'k0[4]', 'k1[4]''.
+Warning: In design 'prince_cfb', the same net is connected to more than one pin on submodule 'prince_core_inst'. (LINT-33)
+   Net 'chip_id[3]' is connected to pins 'k0[3]', 'k1[3]''.
+Warning: In design 'prince_cfb', the same net is connected to more than one pin on submodule 'prince_core_inst'. (LINT-33)
+   Net 'chip_id[2]' is connected to pins 'k0[2]', 'k1[2]''.
+Warning: In design 'prince_cfb', the same net is connected to more than one pin on submodule 'prince_core_inst'. (LINT-33)
+   Net 'chip_id[1]' is connected to pins 'k0[1]', 'k1[1]''.
+Warning: In design 'prince_cfb', the same net is connected to more than one pin on submodule 'prince_core_inst'. (LINT-33)
+   Net 'chip_id[0]' is connected to pins 'k0[0]', 'k1[0]''.
+1
