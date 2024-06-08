@@ -1,0 +1,1651 @@
+ 
+****************************************
+Report : cell
+Design : prince
+Version: R-2020.09-SP4
+Date   : Sat Jun  8 10:30:56 2024
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U323                      AN2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U324                      AN2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U325                      AN2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U326                      AN2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U327                      AN2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U328                      AN2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U329                      AN2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U330                      AN2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U331                      AN2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U332                      AN2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U333                      AN2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U334                      AN2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U335                      AN2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U336                      AN2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U337                      AN2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U338                      AN2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U339                      AN2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U340                      AN2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U341                      AN2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U342                      AN2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U343                      AN2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U344                      AN2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U345                      NR2OPTPAD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U346                      NR2OPTPAD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U347                      NR2OPTPAD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U348                      NR2OPTPAD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U349                      NR2OPTPAD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U350                      NR2OPTPAD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U351                      ND4D0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U352                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U353                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U354                      AOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U355                      AOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U356                      AOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U357                      AOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U358                      AOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U359                      AOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U360                      AOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U361                      AOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U362                      AOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U363                      AOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U364                      AOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U365                      AOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U366                      AOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U367                      CKND12BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          2.184000  
+U368                      AOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U369                      AOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U370                      AOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U371                      AOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U372                      AOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U373                      AOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U374                      AOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U375                      CKND12BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          2.184000  
+U376                      AOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U377                      AOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U378                      AOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U379                      NR2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.504000  
+U380                      INVD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U381                      OR2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U382                      CKND12BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          2.184000  
+U383                      CKND12BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          2.184000  
+U384                      CKND12BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          2.184000  
+U385                      CKND12BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          2.184000  
+U386                      CKND12BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          2.184000  
+U387                      CKND12BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          2.184000  
+U388                      CKND12BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          2.184000  
+U389                      CKND12BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          2.184000  
+U390                      CKND12BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          2.184000  
+U391                      CKND12BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          2.184000  
+U392                      CKND12BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          2.184000  
+U393                      CKND12BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          2.184000  
+U394                      CKND12BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          2.184000  
+U395                      CKND12BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          2.184000  
+U396                      CKND12BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          2.184000  
+U397                      CKND12BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          2.184000  
+U398                      MAOI22D0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U399                      CKND12BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          2.184000  
+U400                      CKND12BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          2.184000  
+U401                      CKND12BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          2.184000  
+U402                      CKND12BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          2.184000  
+U403                      CKND12BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          2.184000  
+U404                      CKND12BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          2.184000  
+U405                      AOI31D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U406                      AOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U407                      AOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U408                      AOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U409                      AOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U410                      CKND12BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          2.184000  
+U411                      CKND12BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          2.184000  
+U412                      NR2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.504000  
+U413                      CKND2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.504000  
+U414                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U415                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U416                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U417                      CKND2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.504000  
+U418                      NR4D0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U419                      CKND12BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          2.184000  
+U420                      CKND12BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          2.184000  
+U421                      NR4D0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U422                      CKND2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.504000  
+U423                      INR2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U424                      CKND2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.504000  
+U425                      NR3D0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U426                      CKND2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.504000  
+U427                      CKND2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.504000  
+U428                      NR4D0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U429                      CKND2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.504000  
+U430                      AN3D0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U431                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U432                      AN4D0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U433                      AO22D0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U434                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U435                      INR2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U436                      CKND2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.504000  
+U437                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U438                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U439                      IND4D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U440                      NR3D0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U441                      ND3D0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U442                      INR4D0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U443                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U444                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U445                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U446                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U447                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U448                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U449                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U450                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U451                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U452                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U453                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U454                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U455                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U456                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U457                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U458                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U459                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U460                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U461                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U462                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U463                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U464                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U465                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U466                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U467                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U468                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U469                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U470                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U471                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U472                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U473                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U474                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U475                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U476                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U477                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U478                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U479                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U480                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U481                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U482                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U483                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U484                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U485                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U486                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U487                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U488                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U489                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U490                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U491                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U492                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U493                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U494                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U495                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U496                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U497                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U498                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U499                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U500                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U501                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U502                      INVD0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.336000  
+U503                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U504                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U505                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U506                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U507                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U508                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U509                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U510                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U511                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U512                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U513                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U514                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U515                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U516                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U517                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U518                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U519                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U520                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U521                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U522                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U523                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U524                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U525                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U526                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U527                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U528                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U529                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U530                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U531                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U532                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U533                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U534                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U535                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U536                      IND2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U537                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U538                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U539                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U540                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U541                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U542                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U543                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U544                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U545                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U546                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U547                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U548                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U549                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U550                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U551                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U552                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U553                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U554                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U555                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U556                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U557                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U558                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U559                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U560                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U561                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U562                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U563                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U564                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U565                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U566                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U567                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U568                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U569                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U570                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U571                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U572                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U573                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U574                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U575                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U576                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U577                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U578                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U579                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U580                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U581                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U582                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U583                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U584                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U585                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U586                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U587                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U588                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U589                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U590                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U591                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U592                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U593                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U594                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U595                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U596                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U597                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U598                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U599                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U600                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U601                      IND2D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.672000  
+U602                      CKMUX2D0BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.176000  
+U603                      IND3D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          0.840000  
+U604                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U605                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U606                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U607                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U608                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U609                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U610                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U611                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U612                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U613                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U614                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U615                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U616                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U617                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U618                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U619                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U620                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U621                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U622                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U623                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U624                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U625                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U626                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U627                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U628                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U629                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U630                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U631                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U632                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U633                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U634                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U635                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U636                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U637                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U638                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U639                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U640                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U641                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U642                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U643                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U644                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U645                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U646                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U647                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U648                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U649                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U650                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U651                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U652                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U653                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U654                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U655                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U656                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U657                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U658                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U659                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U660                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U661                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U662                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U663                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U664                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U665                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U666                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U667                      MAOI22D1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          1.008000  
+U668                      CKND12BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          2.184000  
+U669                      AO22D16BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          6.384000  
+U670                      AO22D16BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          6.384000  
+U671                      AO22D16BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          6.384000  
+block_reg_reg_0__0_       DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_0__1_       DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_0__2_       DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_0__3_       DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_0__4_       DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_0__5_       DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_0__6_       DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_0__7_       DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_0__8_       DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_0__9_       DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_0__10_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_0__11_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_0__12_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_0__13_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_0__14_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_0__15_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_0__16_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_0__17_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_0__18_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_0__19_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_0__20_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_0__21_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_0__22_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_0__23_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_0__24_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_0__25_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_0__26_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_0__27_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_0__28_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_0__29_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_0__30_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_0__31_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__0_       DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__1_       DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__2_       DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__3_       DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__4_       DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__5_       DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__6_       DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__7_       DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__8_       DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__9_       DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__10_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__11_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__12_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__13_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__14_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__15_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__16_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__17_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__18_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__19_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__20_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__21_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__22_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__23_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__24_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__25_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__26_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__27_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__28_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__29_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__30_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+block_reg_reg_1__31_      DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+core                      prince_core                     5855.135962
+                                                                    h, n
+encdec_reg_reg            DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__0_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__1_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__2_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__3_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__4_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__5_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__6_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__7_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__8_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__9_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__10_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__11_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__12_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__13_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__14_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__15_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__16_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__17_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__18_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__19_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__20_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__21_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__22_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__23_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__24_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__25_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__26_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__27_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__28_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__29_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__30_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_0__31_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__0_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__1_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__2_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__3_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__4_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__5_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__6_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__7_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__8_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__9_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__10_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__11_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__12_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__13_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__14_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__15_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__16_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__17_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__18_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__19_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__20_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__21_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__22_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__23_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__24_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__25_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__26_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__27_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__28_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__29_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__30_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_1__31_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__0_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__1_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__2_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__3_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__4_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__5_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__6_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__7_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__8_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__9_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__10_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__11_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__12_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__13_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__14_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__15_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__16_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__17_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__18_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__19_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__20_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__21_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__22_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__23_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__24_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__25_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__26_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__27_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__28_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__29_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__30_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_2__31_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__0_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__1_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__2_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__3_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__4_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__5_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__6_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__7_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__8_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__9_         DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__10_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__11_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__12_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__13_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__14_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__15_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__16_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__17_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__18_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__19_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__20_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__21_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__22_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__23_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__24_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__25_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__26_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__27_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__28_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__29_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__30_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+key_reg_reg_3__31_        DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+next_reg_reg              DFCNQD1BWP12T40P140
+                                          tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs
+                                                          3.024000  n
+--------------------------------------------------------------------------------
+Total 544 cells                                           6794.927950
+1

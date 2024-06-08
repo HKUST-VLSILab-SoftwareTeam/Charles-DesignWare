@@ -6,4 +6,9 @@ source ../../script/sourceme.sh
 echo $WORK_ROOT
 
 # run dc shell
-dc_shell -f run.tcl | tee -i run.log
+if ($1 == "debug") then
+    dc_shell -gui
+else if ($1 == "syn") then
+    dc_shell -f run.tcl | tee -i run.log
+endif
+
