@@ -1,0 +1,84 @@
+#!/bin/tcsh -f
+
+# file: tcshell script for running behavior simulation using vcs (recommend to use ver.2018)
+# create: Oct/15/2021 j84200486
+# notice: please ma vcs and ma verdi in your terminal before running this script.
+
+# sourceme: set global env parameters
+source ../../../script/sourceme.sh
+
+# set environment for including the common Libraries
+set SIM_FLIST   = "../th/sim.f"
+set TC_NAME     = round_case0
+
+# VCS command explanations: 
+# -full64:              compile in 64-bit mode
+# -sverilog:            support compiling system verilog
+# +vcs+fsdbon:          dump a dump.fsdb file after type run in simv env
+# +vcs+dumpvars:        dump the variables into the fsdb file
+# -F:                   Specify the filelist containing your design files, -F support relative path, -f only supports abs path
+# -j28:                 use 28 cores for compilation (can be changed)
+# -kdb:                 enable generating verdi KDB database, it's used to trace signals inside verdi
+# -debug_access+all:    enable all the debug features
+# -R:                   runs the simv executable immediately after VCS simulation
+# -ucli:                enable debug in the ucli (unified command line interface) mode
+# -cm:                  enable line, condition, fsm, toggle, branch and assertation coverage analysis
+# -lint=all:            print full lint problems, or lint=none
+# +vc:                  enables the direct call of C++ functions in the Verilog code
+# +v2k:                 enables the use of new Verilog constructs in the 2001 standard
+# +vcs+initreg+random:  x-prop (initialize register to be x). It will init both reg and mem
+# +vcs+initmem+random:  memory init with random value, will not init reg
+# -ntb_opts uvm:        compile the vcs's default uvm env
+# timescale:            simulation timescale representation
+# -l:                   log's name  
+if ($* == "compile") then
+    # This command runs the simulation and output the simv file in normal mode
+    vcs -full64 \
+    -sverilog \
+    -notice \
+    -Mupdate \
+    -ntb_opts uvm-1.2 \
+    -timescale=1ns/1ps \
+    +incdir+../th+../tc \
+    # +vcs+fsdbon \
+    # +vcs+dumpvars \
+    -LDFLAGS -Wl,--no-as-needed \
+    +warn=noCDNYI,noIPDW,noILLGO,noTMR,noPHNE,noIRIID-W \
+    +vcs+flush+all \
+    -F $SIM_FLIST \
+    -j28 \
+    -kdb \
+    # +define+DUMP_VPD \
+    -debug_access+all \
+	+vc \
+	+v2k \
+    +lint=none \
+    +vcs+initreg+random \
+    -l compile.log \
+    -o simv
+else if ($* == "run_tc") then
+    ./simv harness -full64 -sverilog +vc +v2k\
+    # +vpdfile+${TC_NAME}.vpd \
+    +UVM_TESTNAME=${TC_NAME} \
+    # +WAVE_PATH=. \
+    +vcs+fsdbon \
+    +vcs+dumpvars \
+    # +WAVE_TYPE=fsdb \
+    -l run_tc.log
+else if ($* == "cov") then
+    # This command runs the coverage analysis of your code
+    vcs -full64 \
+    -sverilog \
+    -F $SIM_FLIST \
+    -j28 \
+    -kdb \
+    -cm line+cond+fsm+tgl+branch+assert \
+    -timescale=1ns/1ps \
+    -l vcs_cov.log
+else if ($* == "wave") then
+    # open the fsdb file
+    verdi -ssf novas.fsdb &
+else
+    echo "error: please specify either 'compile', 'run_tc', 'cov' or 'wave' as the input"
+endif
+

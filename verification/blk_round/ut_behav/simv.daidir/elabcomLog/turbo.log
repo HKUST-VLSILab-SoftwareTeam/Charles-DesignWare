@@ -1,0 +1,5 @@
+Command Line: /opt/synopsys/vcs/Q-2020.03-SP2-7/linux64/bin/elabcom -logdir /home/ic/github/Charles-DesignWare/verification/blk_round/ut_behav/simv.daidir/elabcomLog -simvdaidir /home/ic/github/Charles-DesignWare/verification/blk_round/ut_behav/simv.daidir -lib /home/ic/github/Charles-DesignWare/verification/blk_round/ut_behav/simv.daidir/work -saveLevel -elab /home/ic/github/Charles-DesignWare/verification/blk_round/ut_behav/simv.daidir/kdb -simflow -simdir /home/ic/github/Charles-DesignWare/verification/blk_round/ut_behav/simv.daidir/kdb_libs -topfile /home/ic/github/Charles-DesignWare/verification/blk_round/ut_behav/simv.daidir/.elabcomTopFile -ssv -ssy -Lf work +disable_message+C00380+C00381 +disable_message+C00388+C00389
+uname(Linux qingteng 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64)
+[INFO] error/warning message 'C00388' has been suppressed.
+[INFO] error/warning message 'C00389' has been suppressed.
+au time 0.129516 0.100653 0.024297 delta 109789184 109789184 total 214253568 214253568
