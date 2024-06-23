@@ -12,8 +12,8 @@ import uvm_pkg::*;
 `include "common_dat_stream_scoreboard.sv"
 `include "common_dat_stream_env.sv"
 `include "base_test.sv"
-`include "../tc/round_case0.sv"
-`include "../tc/round_case1.sv"
+`include "round_case0.sv"
+`include "round_case1.sv"
 
 module harness();
 
@@ -25,17 +25,12 @@ module harness();
   common_dat_stream_int #(10) bus_in (.clk(clk),.rst_n(rst_n));
   common_dat_stream_int #(8) bus_out (.clk(clk),.rst_n(rst_n));
 
-
-  string test_name;   //test name
-  string wave_path;   //wave_path
-  string wave_type;   //wave_type
-  string wave_name;   //wave_name
-
-  // DUT
-  round #(
+  round
+  #(
     .IN_WID  ( 10),                 //input width
     .OUT_WID ( 8 )                  //output width
-  ) round_inst (
+  )round_inst
+  (
     .clk     (clk     ),   //clock
     .rst_n   (rst_n   ),   //reset
     .dat_i   (bus_in.dat),   //dat input
@@ -46,31 +41,22 @@ module harness();
 
   initial
   begin
+    //run_test("my_case0");
     run_test();
   end
 
+  string test_name;   //test name
+  string wave_path;   //wave_path
+  string wave_type;   //wave_type
+  string wave_name;   //wave_name
   initial
   begin
     $value$plusargs("UVM_TESTNAME=%s", test_name);    
-    // $value$plusargs("WAVE_PATH=%s", wave_path);    
+    $value$plusargs("WAVE_PATH=%s", wave_path);    
     $value$plusargs("WAVE_TYPE=%s", wave_type);    
-    // wave_name = $sformatf("%s//%s.%s", wave_path, test_name, wave_type);
-    // wave_name = $sformatf("%s%s", test_name, wave_type);
+    wave_name = $sformatf("%s//%s.%s", wave_path, test_name, wave_type);
     `uvm_info("SIM name:", test_name, UVM_LOW)
-	// if(wave_type == "fsdb") begin
-    // `uvm_info("wave name:", wave_name, UVM_LOW)
-    // $fsdbDumpfile(test_name);
-    // $fsdbDumpvars(0, harness);
-    // end
   end
-
-
-  initial begin
-    uvm_config_db#(int)::set(null, "*", "fsdb_dump_start_time", 0);
-    uvm_config_db#(int)::set(null, "*", "fsdb_dump_end_time", 1000);
-    uvm_config_db#(string)::set(null, "*", "fsdb_dump_file", "your_dump_file.fsdb");
-  end
-
 
   initial
   begin

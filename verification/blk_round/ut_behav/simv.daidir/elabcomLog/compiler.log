@@ -1,3 +1,0 @@
-*design* DebussyLib (btIdent Verdi_Q-2020.03-SP2-7)
-Command arguments:  -lib  /home/ic/github/Charles-DesignWare/verification/blk_round/ut_behav/simv.daidir/work  -saveLevel  -elab  /home/ic/github/Charles-DesignWare/verification/blk_round/ut_behav/simv.daidir/kdb  -simflow  -simdir  /home/ic/github/Charles-DesignWare/verification/blk_round/ut_behav/simv.daidir/kdb_libs  -topfile  /home/ic/github/Charles-DesignWare/verification/blk_round/ut_behav/simv.daidir/.elabcomTopFile  -ssv  -ssy  -Lf  work  +disable_message+C00380+C00381  +disable_message+C00388+C00389  -SNPS_ELABCOM  -saveElab 
-Total	0 error(s),   0 warning(s)

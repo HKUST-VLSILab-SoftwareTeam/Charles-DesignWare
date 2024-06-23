@@ -8,8 +8,7 @@
 source ../../../script/sourceme.sh
 
 # set environment for including the common Libraries
-set SIM_FLIST   = "../th/sim.f"
-set TC_NAME     = round_case0
+set SIM_FLIST   = ../th/sim.f
 
 # VCS command explanations: 
 # -full64:              compile in 64-bit mode
@@ -26,46 +25,44 @@ set TC_NAME     = round_case0
 # -lint=all:            print full lint problems, or lint=none
 # +vc:                  enables the direct call of C++ functions in the Verilog code
 # +v2k:                 enables the use of new Verilog constructs in the 2001 standard
-# +vcs+initreg+random:  x-prop (initialize register to be x). It will init both reg and mem
-# +vcs+initmem+random:  memory init with random value, will not init reg
+# +vcs+initreg+random:  (function seems have some problem) x-prop (initialize register to be x). It will init both reg and mem
+# +vcs+initmem+random:  (function seems have some problem) memory init with random value, will not init reg
 # -ntb_opts uvm:        compile the vcs's default uvm env
 # timescale:            simulation timescale representation
 # -l:                   log's name  
-if ($* == "compile") then
-    # This command runs the simulation and output the simv file in normal mode
-    vcs -full64 \
-    -sverilog \
-    -notice \
-    -Mupdate \
-    -ntb_opts uvm-1.2 \
-    -timescale=1ns/1ps \
-    +incdir+../th+../tc \
-    # +vcs+fsdbon \
-    # +vcs+dumpvars \
-    -LDFLAGS -Wl,--no-as-needed \
-    +warn=noCDNYI,noIPDW,noILLGO,noTMR,noPHNE,noIRIID-W \
-    +vcs+flush+all \
-    -F $SIM_FLIST \
-    -j28 \
-    -kdb \
-    # +define+DUMP_VPD \
-    -debug_access+all \
-	+vc \
-	+v2k \
-    +lint=none \
-    +vcs+initreg+random \
-    -l compile.log \
-    -o simv
-else if ($* == "run_tc") then
-    ./simv harness -full64 -sverilog +vc +v2k\
-    # +vpdfile+${TC_NAME}.vpd \
-    +UVM_TESTNAME=${TC_NAME} \
-    # +WAVE_PATH=. \
-    +vcs+fsdbon \
-    +vcs+dumpvars \
-    # +WAVE_TYPE=fsdb \
-    -l run_tc.log
-else if ($* == "cov") then
+if ($1 == "vcs") then
+    vcs -full64                       \
+        -F ../th/sim.f                \
+        -timescale=1ns/1ps            \
+        -debug_access+all             \
+        -notice                       \
+        -LDFLAGS -Wl,--no-as-needed   \
+        -Mupdate                      \
+        -j28                          \
+        -kdb                          \
+        -sverilog                     \
+        -ntb_opts uvm-1.1             \
+        -o simv                       \
+        -l uvm_compile.log            \
+        +vcs+flush+all                \
+        +warn=noCDNYI,noIPDW,noILLGO,noTMR,noPHNE,noIRIID-W \
+        +vcs+fsdbon                   \
+        +vcs+dumpvars                 \
+        +lint=all                     \
+        +incdir+../th+../tc           
+else if ($1 == "sim") then
+    # judge the tc_name is provided
+    if ($#argv != 2) then
+        echo "Incorrect number of arguments, requires 2, only $#argv is provided"
+        echo "arg1 should be the script command, arg2 should be the tc's name"
+        exit 1
+    endif
+    # get the tc name and perform simulation
+    set TC_NAME     = $2  # round_case0 or round_case1
+    ./simv harness -l ${TC_NAME}.log +UVM_TESTNAME=${TC_NAME}
+    # rename the result
+    mv novas.fsdb ${TC_NAME}.fsdb
+else if ($1 == "cov") then
     # This command runs the coverage analysis of your code
     vcs -full64 \
     -sverilog \
@@ -75,9 +72,23 @@ else if ($* == "cov") then
     -cm line+cond+fsm+tgl+branch+assert \
     -timescale=1ns/1ps \
     -l vcs_cov.log
-else if ($* == "wave") then
-    # open the fsdb file
-    verdi -ssf novas.fsdb &
+else if ($1 == "verdi") then
+    # judge the tc_name is provided
+    if ($#argv != 2) then
+        echo "Incorrect number of arguments, requires 2, only $#argv is provided"
+        exit 1
+    endif
+    # get the tc name and perform simulation
+    set TC_NAME     = $2  # round_case0 or round_case1
+    # open verdi
+    verdi -ssf ${TC_NAME}.fsdb &
+else if ($1 == "help") then
+    echo "============================="
+    echo "Example:"
+    echo "csh run vcs"
+    echo "csh run sim round_case0"
+    echo "csh run verdi round_case0"
+    echo "============================="
 else
     echo "error: please specify either 'compile', 'run_tc', 'cov' or 'wave' as the input"
 endif
