@@ -15,7 +15,7 @@ set TOP_MODULE_NAME divider
 # set DB_NAME tcbn28hpcplusbwp7t35p140tt0p9v85c_ccs.db
 
 # TSMC 40nm library
-set DB_PATH /home/ic/TechLib/t28_hpcp/logic/tcbn28hpcplusbwp12t40p140_180a/AN61001_20180514/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn28hpcplusbwp12t40p140_180a
+set DB_PATH /export/techlib/tsmc28hpc/logic/tcbn28hpcplusbwp12t40p140_180a/AN61001_20180514/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn28hpcplusbwp12t40p140_180a
 set DB_NAME tcbn28hpcplusbwp12t40p140tt0p9v85c_ccs.db
 # set DB_NAME tcbn28hpcplusbwp12t40p140tt1v0p9v85c_ccs.db
 
